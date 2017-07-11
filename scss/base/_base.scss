@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(235, 236, 237);
+  font-size: 10px;
+  color: #727272;
+}
+
+a,
+a:focus,
+a:hover,
+button,
+button:focus,
+.btn.focus,
+.btn:focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn.active.focus,
+.btn.active:focus {
+  color: #727272;
+  outline: none;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.btn.active, 
+.btn:active {
+  box-shadow: none;
+}
+
+button:hover, 
+button:focus, 
+.button:hover, 
+.button:focus {
+    background-color: transparent;
+}

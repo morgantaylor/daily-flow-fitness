@@ -1,0 +1,19 @@
+// ==============
+// Typography
+// ==============   
+
+
+// example
+
+.menu {
+    font-family: $roboto;
+}
+
+.heading {
+	text-align: center;
+	color: $white;
+	font-family: $raleway;
+    font-size: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
