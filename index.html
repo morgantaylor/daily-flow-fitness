@@ -21,55 +21,67 @@
 
 <body>
   <header>
-    <div class="logo">logo here</div>
-    <nav>
-      <button class="btn nav-item active" type="button">
-        <a href="index.html">Home</a>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top"> <!--bg-faded for background, navbar-light for dark text-->
+      <button class="navbar-toggler navbar-toggler-right" type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="dropdown">
-        <button class="btn nav-item dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Services
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="servicesMenu">
-          <li><a href="services.html">Sport Specific Training</a></li>
-          <li><a href="services.html">Message</a></li>
+      <a class="navbar-brand" href="#">
+        <img src="/img/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" 
+              id="navbarDropdownMenuLink" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+                Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="services.html">Sport Specific Training</a>
+              <a class="dropdown-item" href="services.html">Message</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="movements.html" 
+              id="navbarDropdownMenuLink" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+                Movement Library
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="movements.html">Core</a>
+              <a class="dropdown-item" href="movements.html">Back</a>
+              <a class="dropdown-item" href="movements.html">Arms</a>
+              <a class="dropdown-item" href="movements.html">Legs</a>
+              <a class="dropdown-item" href="movements.html">Chest</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Cole</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn nav-item dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Movement Library
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="movementMenu">
-          <li><a href="movements.html">Core</a></li>
-          <li><a href="movements.html">Back</a></li>
-          <li><a href="movements.html">Arms</a></li>
-          <li><a href="movements.html">Legs</a></li>
-          <li><a href="movements.html">Chest</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <button class="btn nav-item dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          About Me
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="aboutMenu">
-          <li><a href="about.html">Bio</a></li>
-          <li><a href="about.html">Certifications</a></li>
-          <li><a href="about.html">Testimonials</a></li>
-        </ul>
-      </div>
-      <button class="btn nav-item" type="button">
-        <a href="contact.html">Contact</a>
-      </button>
     </nav>
   </header>
-  <main class="home">
-    <div class="hero hero-home">
-      <div class="overlay-left"></div>
-      <div class="overlay-right"></div>
-      <span class="moto">Mind. Flow. Fitness.</span>
+  <main class="home-content">
+    <div class="hero home-content_hero">
+      <div class="home-content_overlay-left"></div>
+      <div class="home-content_overlay-right"></div>
+      <span class="home-content_moto">Daily Flow Fitness</span>
     </div>
   </main>
   <footer></footer>
