@@ -6,4 +6,11 @@
 			color: $navigation-link-color;
 		}
 	}
+
+}
+
+.navbar-brand {
+	display: flex;
+	align-items:flex-end;
+	color: $black;
 }
