@@ -1,16 +1,16 @@
 // navigation
 
-.navbar-inverse {
-	.navbar-nav {
-		.nav-link {
-			color: $navigation-link-color;
-		}
-	}
-
+.navbar {
+	@extend %box-shadow;
 }
 
 .navbar-brand {
 	display: flex;
 	align-items:flex-end;
 	color: $black;
+
+	.logo-sm {
+		max-height: 40px;
+		margin-right: 10px;
+	}
 }

@@ -1,42 +1,13 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 460px;
 
-  &.home-content_hero {
-    background: url(../img/hero-image1.jpg);
+  &__home {
+    @extend %hero;
+    display: flex;
+    background: url(../img/8k-dumbells.png);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
-}
-
-.home-content_overlay {
-  &-left {
-    background: linear-gradient(to right, rgba(0,0,0,1) 60%,rgba(0,0,0,0.5) 90%,rgba(255,255,255,0) 100%);
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 0;
-  }
-
-  &-right {
-    background: linear-gradient(to left, rgba(0,0,0,1) 60%,rgba(0,0,0,0.5) 90%,rgba(255,255,255,0) 100%);
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    right: 0;
-  }
-}
-
-.home-content_moto {
-  position: relative;
-  display: flex;
-  align-items: center;
-  font-size: 75px;
-  font-family: $raleway;
-  color: $snow;
-  letter-spacing: 1px;
 }
