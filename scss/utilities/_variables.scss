@@ -20,15 +20,16 @@ $blue             :     #0078a0;
 
 $sans-serif   :     sans-serif;
 $verdana      :     verdana, $sans-serif;
-$raleway      :     'Raleway', sans-serif;
-$roboto       :     'Roboto Condensed', sans-serif;
+$pt-sans      :    'PT Sans', $sans-serif;
+$roboto-slab  :     'Roboto Slab', serif;
 
 // Font Sizes
 
-$font-extralg :    2.5em;
-$font-large   :    2em;
-$font-medium  :    1.5em;
-$font-small   :    1.3em;
+$font-extralg :    2.5rem; // 40px
+$font-large   :    1.5rem; // 32px
+$font-medium  :    1rem;   // 16px
+$font-small   :    .9rem;  // 14px
+$font-xsmall  :    .8rem;   // 12px
 
 // Component Colors
 $navigation-link-color   : $white;

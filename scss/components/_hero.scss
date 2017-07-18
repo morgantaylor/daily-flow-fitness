@@ -2,12 +2,10 @@
 
   &__home {
     @extend %hero;
-    display: flex;
-    background: url(../img/8k-dumbells.png);
-    background-size: cover;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    // need new image
+    // background: url(../img/8k-dumbells.png);
+    // background-size: cover;
+    // background-position: center, center;
+    // background-repeat: no-repeat, no-repeat;
   }
 }

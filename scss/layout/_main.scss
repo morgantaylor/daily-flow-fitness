@@ -4,22 +4,38 @@ main {
 	flex-direction: column;
 
 	.text-wrapper {
-		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 
-	.moto,
-	.lead {
-		color: $snow;
-		text-shadow: 1px 1px 2px rgba(0,0,0,0.7)
-	}
-
-	.container {
+	.container-full {
 		@extend %width-height;
 		display: flex;
 	}
 
+	.home__moto {
+		
+		.text-wrapper{
+			max-width: 600px;
+		}
+		
+		h1,
+		.lead {
+			color: $white;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.7)
+		}
+
+		.lead {
+			color: $white;
+			font-size: 1.5rem;
+		}
+		// once the picture is turned grey in photoshop 
+		// the button will turn back to blue
+	}
+
 	.home__about {
-	    height: 400px;
+	    @extend %container-full-height;
         align-items: center;
         margin: 15px 0;
 
@@ -35,9 +51,7 @@ main {
 	}
 
 	.home__services {
-		display: flex;
-		width: 100%;
-		height: 400px;
+		@extend %container-full-height;
 		background-color: $home--services--bg;
 	}
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

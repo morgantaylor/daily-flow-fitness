@@ -1,4 +1,5 @@
 body {
+  font-family: $pt-sans;
   background-color: rgb(235, 236, 237);
   font-size: 10px;
   color: #727272;
@@ -15,7 +16,6 @@ button:focus,
 .btn:active:focus,
 .btn.active.focus,
 .btn.active:focus {
-  color: #727272;
   outline: none;
   text-transform: none;
   text-decoration: none;
@@ -31,4 +31,8 @@ button:focus,
 .button:hover, 
 .button:focus {
     background-color: transparent;
+}
+
+h1 {
+	font-size: 3.75rem;
 }
