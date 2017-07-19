@@ -1,57 +1,72 @@
-main {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+.page-content {
+    height: 100%;
+    display: block;
+    position: relative;
+    top: 60px;
+}
 
-	.text-wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-	}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
 
-	.container-full {
-		@extend %width-height;
-		display: flex;
-	}
+section {
+	&.paragraph {
+	    font-size: 16px;
+	    line-height: 1.6;
+	    color: #2a2f33;
 
-	.home__moto {
-		
-		.text-wrapper{
-			max-width: 600px;
+	    .container {
+		    max-width: 600px;
 		}
-		
-		h1,
-		.lead {
-			color: $white;
-			text-shadow: 1px 1px 2px rgba(0,0,0,0.7)
-		}
-
-		.lead {
-			color: $white;
-			font-size: 1.5rem;
-		}
-		// once the picture is turned grey in photoshop 
-		// the button will turn back to blue
 	}
-
-	.home__about {
-	    @extend %container-full-height;
-        align-items: center;
-        margin: 15px 0;
-
-	    .text-wrapper {
-	    	max-width: 400px;
-	    	width: 100%;
-	    	margin: 0 auto 0 50px;
-	    }
-
-	    .img-about {
-	    	max-height: 400px;
-	    }
+	&.horizontal-divider {
+	    display: block;
+	    width: 100%;
+	    height: 0;
+	    border-bottom: 1px solid #eff3f6;
+	    margin: 60px 0;
+	} 
+	&.paragraph {
+	    margin-bottom: 40px;
 	}
-
-	.home__services {
-		@extend %container-full-height;
-		background-color: $home--services--bg;
+	.section-title {
+	    padding-top: 30px;
+	    margin-top: -30px;
+	    line-height: 1.5;
 	}
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	.dark-background {
+	    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+	    background: 0 0;
+	} 
+	&.footer.grid {
+	    margin-bottom: 0;
+	}
+}
+.code-header {
+    display: block;
+    background: #59626a;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #59626a;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.code-header, .label {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.code-sample {
+    display: block;
+    border-radius: 0 0 3px 3px;
+    border: 1px solid #eff3f6;
+    border-top: 0;
+    padding: 10px;
+    margin: 0 0 30px;
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

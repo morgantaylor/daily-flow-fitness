@@ -1,11 +1,71 @@
 .hero {
+  border-top: 0;
+  height: auto;
+  padding: 40px 0 70px;
+  text-align: center;
+  border-bottom: 1px solid #f4f7f9;
+}
 
-  &__home {
-    @extend %hero;
-    // need new image
-    // background: url(../img/8k-dumbells.png);
+section {
+
+  &.hero {
+    overflow: auto !important;
+  }
+
+  &.hero {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  &.hero.light-background {
+    background: #f4f7f9;
+    border-bottom: 1px solid #eff3f6;
+  }
+
+  &.hero .content {
+    margin: auto;
+  }
+
+  &.hero .container {
+    margin: auto;
+    max-width: 740px;
+  }
+
+  &.hero .hero-heading {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Lato,"Open Sans",Helvetica,sans-serif;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  &.hero .hero-subheading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: .9;
+    margin-top: 5px;
+  }
+} 
+.hero {
+  //how to put in a background 
+  &.home__about {
+    // background: url(../img/8k-dumbells.png) no-repeat;
     // background-size: cover;
-    // background-position: center, center;
-    // background-repeat: no-repeat, no-repeat;
   }
 }

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Daily Flow Fitness is run by Cole Citret. He is an experienced fitness professional who also specializes in neuromuscular massage and nutrition.">
+<meta name="keywords" content="keywords go here">
+<meta name="author" content="Cole Citret">
+<title>Daily Flow Fitness | Home</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700" rel="stylesheet">
+
+<!-- Latest Bootstrap 4 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<!-- Custom styles for this website -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<section class="hero light-background" id="js-hero">
+	<div class="content">
+		<div class="container">
+			<h1 class="hero-heading">Static Page Style Guide</h1>
+			<h2 class="hero-subheading">A collection of reusable components for building static pages.</h2>
+		</div>
+	</div>
+</section>
+
+<div class="page-content"><!-- everything that isn't the hero or navigation -->
+	<div class="page-layout with-sidebar">
+		<div class="sidebar-container" id="js-sidebar-container">
+			<section class="sidebar" id="js-sidebar">
+				<ul class="sidebar-list">
+					<a href="#introduction" class="sidebar-list-item"><li>Introduction</li></a>
+				</ul>
+
+				<ul class="sidebar-list">
+					<span class="sidebar-list-title">Page Components</span>
+					<a href="#hero" class="sidebar-list-item"><li>Hero</li></a>
+					<a href="#starting" class="sidebar-list-item"><li>Starting a Page</li></a>
+					<a href="#sidebar-tut" class="sidebar-list-item"><li>Sidebar</li></a>
+					<a href="#paragraphs" class="sidebar-list-item"><li>Paragraphs</li></a>
+					<a href="#grids" class="sidebar-list-item"><li>Grids</li></a>
+					<a href="#cta" class="sidebar-list-item"><li>Call to Action</li></a>
+					<a href="#dividers" class="sidebar-list-item"><li>Dividers</li></a>
+					<a href="#images" class="sidebar-list-item"><li>Images</li></a>
+					<a href="#ending" class="sidebar-list-item"><li>Ending a Page</li></a>
+				</ul>
+
+				<ul class="sidebar-list">
+					<span class="sidebar-list-title">More Style Guides</span>
+					<a href="/style-guide" class="sidebar-list-item"><li>Buffer Style Guide</li></a>
+					<a href="/style-guide/pages" class="sidebar-list-item"><li>Static Pages</li></a>
+				</ul>
+			</section>
+		</div>
+
+		<div class="page-content-container" id="js-page-content-container">
+
+			<section class="paragraph">
+				<div class="container">
+					<div class="notification blue">Psst! We're looking for the next <a href="http://bufferapp.com/journey/designer">product designer</a> to join us at Buffer! <a href="http://bufferapp.com/journey/designer">Learn more &rarr;</a></div><br><br>
+
+					<h4 class="section-title" id="introduction">Introduction</h4>
+					<p>As Buffer continues to grow, and the number of people needing static pages increases, it will
+						be important for us to maintain consistent styles and structures. This is an early version of a
+						"static page style guide" that can be referenced while constructing a page for any need.
+					</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="hero">Hero</h4>
+					<p>Each static page can have one primary hero container. You can see this page's hero at the very
+						top (scroll up!). Hero sections can have solid background colors or use images as the background.
+						Images should be large, and wider than they are tall (to avoid distortion).
+					</p>
+
+					<p>
+					</p>
+
+					<span class="code-header">Example: Hero</span>
+					<code class="code-sample">
+						&lt;section class="hero &lt;options&gt;" id="js-hero" style="&lt;style-options&gt;"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="content"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="hero-heading"&gt;Hero Main Heading&lt;/h1&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="hero-subheading"&gt;Hero Subheading Goes Here&lt;/h2&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="button btn-outline hero-cta"&gt;Optional Primary CTA&lt;/a&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/section&gt;
+					</code>
+
+					<p><h6>Options:</h6>
+						<ul>
+							<li><code>light-background</code></li>
+							<li><code>dark-background</code></li>
+							<li><code>hero-splash</code></li>
+							<p>The <code>hero-splash</code> modifier will make the hero image fill up the entire page.
+								Toggle the splash page setting at the top of this page to see an example.
+							</p>
+						</ul>
+					</p>
+
+					<br>
+
+					<p><h6>Style Options:</h6>
+						<ul>
+							<li><code>background-color: #color;</code></li>
+							<li><code>background-image: #fallback-color url('static-image-url') no-repeat;</code></li>
+						</ul>
+					</p>
+
+					<p>Replace the <code>&lt;options&gt;</code> as necessary, depending on the background being used.
+						The <code>&lt;style-options&gt;</code> allow you to use a custom color or image as the hero
+						background.</p>
+
+					<p>Note: You can also use a primary button cta, as documented above, if there is one primary action for
+						a person to take.</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="starting">Starting a Page</h4>
+					<p>After each page hero, you will need to start each page with two lines of code:
+					</p>
+
+					<span class="code-header">Example: Starting a Page</span>
+					<code class="code-sample">
+						&lt;div class="page-content"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="page-layout &lt;sidebar-options&gt;"&gt;
+					</code>
+
+					<p><h6>Sidebar Options:</h6>
+						<ul>
+							<li><code>with-sidebar</code></li>
+							<li><code>without-sidebar</code></li>
+						</ul>
+					</p>
+
+					<p>If the page will not have a sidebar, use <code>without-sidebar</code> and add this extra
+						line of code below the previous two lines:</p>
+
+					<span class="code-header">Example: Without a Sidebar</span>
+					<code class="code-sample">
+						&lt;div class="page-content-container" id="js-page-content-container"&gt;
+					</code>
+
+					<p>If the page will have a sidebar, see the step: <a href="#sidebar-tut">Sidebar</a></p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="sidebar-tut">Sidebar</h4>
+					<p>If you want to have a sidebar enabled on the page, make sure that the <code>sidebar-options</code>
+						from the previous step is set to <code>with-sidebar</code>
+					</p>
+
+					<p>Next, add the following code after the <code>page-layout</code> div:</p>
+
+					<span class="code-header">Example: Sidebar</span>
+					<code class="code-sample">
+						&lt;div class="sidebar-container" id="js-sidebar-container"&gt;<br>
+							&nbsp;&nbsp;&lt;section class="sidebar" id="js-sidebar"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="sidebar-list"&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="sidebar-list-item"&gt;&lt;li&gt;Example List Item&lt;/li&gt;&lt;/a&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="sidebar-list"&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="sidebar-list-title"&gt;Example List Title&lt;/span&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="sidebar-list-item"&gt;&lt;li&gt;Example List Item&lt;/li&gt;&lt;/a&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+							&nbsp;&nbsp;&lt;/section&gt;<br>
+						&lt;/div&gt;<br>
+						<br>
+						&lt;div class="page-content-container" id="js-page-content-container"&gt;
+					</code>
+
+					<p>You can modify the above code to create a single list or sub-lists.</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="paragraphs">Paragraphs</h4>
+					<p>We try to optimize clarity and legibility with longer blocks of text. Here's how to insert a
+						paragraph onto a page:
+					</p>
+
+					<span class="code-header">Example: Divider</span>
+					<code class="code-sample">
+						&lt;section class="paragraph"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="section-title" id="introduction"&gt;Optional title for a section&lt;/h4&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Your paragraph text goes here.&lt;/p&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;And will work with multiple paragraphs.&lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/section&gt;
+					</code>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="grids">Grids</h4>
+					<p>Grids are great for showing multiple pieces of related content in the same section. Grids can be
+						broken down into fifths, fourths, thirds and halves. Here's a quick demo
+						(see the <a href="https://bufferapp.com/style-guide">style guide</a> for further reference):
+					</p>
+
+					<span class="code-header">Example: Grids</span>
+					<code class="code-sample">
+						&lt;section class="grid &lt;grid-options&gt;"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="grid-row"&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col one-fourth"&gt;Content here&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col one-fourth"&gt;Content here&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col one-fourth"&gt;Content here&lt;/div&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col one-fourth"&gt;Content here&lt;/div&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/section&gt;
+					</code>
+
+					<p>This will output a grid like this:</p>
+					<br><br>
+				</div>
+			</section>
+
+			<section class="grid">
+				<div class="container">
+					<div class="grid-row">
+						<div class="col one-fourth">
+							<h6>Column Header</h6>
+							<p>A fast and stylish way to read news and blogs, with slick Buffer integration.</p>
+						</div>
+						<div class="col one-fourth">
+							<h6>Column Header</h6>
+							<p>View later in the Pocket iOS apps and share directly to Buffer! (Formerly Read it Later)</p>
+						</div>
+						<div class="col one-fourth">
+							<h6>Column Header</h6>
+							<p>Add great articles to Buffer from one of the best feed reading apps for iPhone.</p>
+						</div>
+						<div class="col one-fourth">
+							<h6>Column Header</h6>
+							<p>Discover great new articles about your interests that you've never seen before with Trapit.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h6>Grid Options:</h6>
+					<p>
+						<ul>
+							<li><code>blank (default)</code></li>
+							<li><code>full-width</code></li>
+						</ul>
+					</p>
+
+					<p>A <code>full-width</code> grid will break its container to fill the entire width of the browser window.
+						A clear example of a full-width grid is the <a href="/transparency">Transparency Dashboard</a>.
+					</p>
+
+					<p>Here are the semantics for different grid sizes:</p>
+					<ul>
+						<li><code>class="col one-half"</code></li>
+						<li><code>class="col one-third"</code></li>
+						<li><code>class="col two-third"</code></li>
+						<li><code>class="col one-fourth"</code></li>
+						<li><code>class="col one-half"</code></li>
+						<li><code>class="col three-fourth"</code></li>
+						<li><code>class="col one-fifth"</code></li>
+						<li><code>class="col two-fifth"</code></li>
+						<li><code>class="col three-fifth"</code></li>
+					</ul>
+
+					<p><strong>Note:</strong> create a new <code>grid-row</code> div to add a new layer to the page.
+						The contents of each <code>grid-row</code> should add up to one whole (i.e. one-fourth +
+						one-fourth + one-half = one).</p>
+					<p>Additionally, the <code>col</code> class in each grid item stands for column. It is needed on
+					each grid element.</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="cta">Calls to Action</h4>
+					<p>You can create responsive, full-width calls to action with the <code>cta</code> component.
+						You will need to set either a <code>dark-background</code> or <code>light-background</code>
+						class depending on the background image you wish to use.
+					</p>
+
+					<p>See the <a href="https://bufferapp.com/style-guide">style guide</a> for further reference on
+						button types that can be used here!</p>
+
+					<span class="code-header">Example: Call to Action</span>
+					<code class="code-sample">
+						&lt;section class="call-to-action dark-background" style="background: url('/images/about/about-hero.jpg') no-repeat; background-size: cover;"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="cta-heading"&gt;Call to action headline&lt;/h2&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="cta-subheading"&gt;Call to action subheading&lt;/h3&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="large button btn-outline cta-action"&gt;Primary Action&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/section&gt;
+					</code>
+				</div>
+			</section>
+
+			<section class="call-to-action dark-background"
+				style="background: url('/images/about/about-hero.jpg') no-repeat; background-size: cover;">
+				<div class="container">
+					<h2 class="cta-heading">This is a call to action headline</h2>
+					<h3 class="cta-subheading">And it pairs beautifully with a subheading here, like this</h3>
+					<a href="#" class="large button btn-outline cta-action">Primary Action</a>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="dividers">Dividers</h4>
+					<p>Use dividers to create visual separation between unrelated sections of content. Dividers are an
+						empty div with top and bottom margins. Here's how to use them:
+					</p>
+				</div>
+			</section>
+
+			<section class="paragraph">
+				<div class="container">
+					<span class="code-header">Example: Divider</span>
+					<code class="code-sample">
+						&lt;section class="horizontal-divider"&gt;&lt;/section&gt;
+					</code>
+
+					<p>And here's what they look like:</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="images">Images</h4>
+					<p>Coming soon...
+					</p>
+				</div>
+			</section>
+
+			<section class="horizontal-divider"></section>
+
+			<section class="paragraph">
+				<div class="container">
+					<h4 class="section-title" id="ending">Ending a Page</h4>
+					<p>At the very end of each page, we need to close the three high-level containing elements. To do this,
+						simple add the following code at the end of the document:
+					</p>
+
+					<span class="code-header">Example: Ending a Page</span>
+					<code class="code-sample">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&lt;!-- page container --&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&lt;!-- page layout --&gt;<br>
+						&nbsp;&nbsp;&lt;/div&gt;&lt;!-- page content --&gt;<br>
+					</code>
+				</div>
+			</section>
+
+		</div><!-- page content container -->
+	</div><!-- with sidebar -->
+</div><!-- page content -->
+
+
+
+<!-- Bootstrap 4 -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

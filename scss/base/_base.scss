@@ -1,8 +1,15 @@
 body {
   font-family: $pt-sans;
-  background-color: rgb(235, 236, 237);
-  font-size: 10px;
-  color: #727272;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #59626a;
+  height: 100%;
+}
+
+a {
+    color: #168eea;
 }
 
 a,
@@ -33,6 +40,51 @@ button:focus,
     background-color: transparent;
 }
 
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 .h1 {
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #323b43;
+    margin: 30px 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
 h1 {
 	font-size: 3.75rem;
+}
+
+.h2, h2 {
+    font-size: 38px;
+}
+
+.h3, h3 {
+    font-size: 32px;
+}
+
+.h4, h4 {
+    font-size: 24px;
+}
+
+
+.h6, h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+section {
+    box-sizing: border-box;
 }
