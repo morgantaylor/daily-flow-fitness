@@ -12,8 +12,8 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700" rel="stylesheet">
 
-<!-- Latest Bootstrap 4 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Custom styles for this website -->
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -21,97 +21,106 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-toggleable-sm bg-faded fixed-top navbar-light"> <!--bg-faded for background, navbar-light for dark text-->
-      <button class="navbar-toggler navbar-toggler-right" type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarNavDropdown" 
-        aria-controls="navbarNavDropdown" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img class="logo-sm d-inline-block align-top" src="./img/dff-logo-black.png" alt="">Daily Flow Fitness
-      </a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" 
-              id="navbarDropdownMenuLink" 
-              data-toggle="dropdown" 
-              aria-haspopup="true" 
-              aria-expanded="false">
-                Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="services.html">Sport Specific Training</a>
-              <a class="dropdown-item" href="services.html">Message</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="movements.html" 
-              id="navbarDropdownMenuLink" 
-              data-toggle="dropdown" 
-              aria-haspopup="true" 
-              aria-expanded="false">
-                Movement Library
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="movements.html">Core</a>
-              <a class="dropdown-item" href="movements.html">Back</a>
-              <a class="dropdown-item" href="movements.html">Arms</a>
-              <a class="dropdown-item" href="movements.html">Legs</a>
-              <a class="dropdown-item" href="movements.html">Chest</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Cole</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page-content">
-    <section class="call-to-action dark-background home_bg">
-      <div class="content">
-        <div class="container">
-          <h1 class="cta-heading">Flow through life.</h1>
-          <h2 class="cta-subheading">Boost performance and move pain free.</h2>
-          <a href="#" class="large button btn-outline cta-action">
-            Learn more...
+    <nav class="navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="logo-sm d-inline-block align-top" src="./img/dff-logo-black.png" alt="">Daily Flow Fitness
           </a>
         </div>
-      </div>
-    </section>
-    <section class="hero light-background home__about">
-      <div class="content">
-        <div class="container">
-          <h2 class="section-title">About Us</h2>
-          <p>My goal is to teach you how to take care of your body through awareness and movement while having fun! Not only can you move pain free, but movement can actualy be enjoyables.</p>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="services.html" 
+                id="servicesDropdown" 
+                data-toggle="dropdown"
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Services <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a href="services.html">Sport Specific Training</a></li>
+                <li><a href="services.html">Message</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="movements.html" 
+                id="movementsDropdown" 
+                data-toggle="dropdown"
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Movement Library <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="movementsDropdown">
+                <li><a href="movements.html">Core</a></li>
+                <li><a href="movements.html">Back</a></li>
+                <li><a href="movements.html">Arms</a></li>
+                <li><a href="movements.html">Legs</a></li>
+                <li><a href="movements.html">Chest</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html">About Cole</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Me</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <img class="img-about" src="../dailyflowfitness/img/about-me.png">
-    </section>
-    <section class="hero home__services">
-      <div class="content">
-        <div class="container">
-          <h2 class="section-title">What We Do</h2>
+      </div> <!--container-fluid-->
+    </nav>
+  </header>
+  <div class="page-wrapper">
+    <main class="page-content">
+      <section class="hero home__cta">
+        <div class="content">
+            <h1 class="hero-heading light">Flow through life.</h1>
+            <h2 class="hero-subheading light">Boost performance and move pain free.</h2>
+            <a href="#" class="large button btn-outline cta-action">
+              Learn more...
+            </a>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer></footer>
-
+      </section>
+      <section class="hero home__about">
+          <div class="content">
+            <h2 class="section-title">About Us</h2>
+            <p>My goal is to teach you how to take care of your body through awareness and movement while having fun! Not only can you move pain free, but movement can actualy be enjoyables.</p>
+            <a href="#" class="link">Learn more about Cole</a>
+          </div>
+          <img class="img-about" src="../dailyflowfitness/img/about-me.png">
+      </section>
+      <section class="hero home__services">
+        <h2 class="section-title light">What We Do</h2>
+        <div class="content">
+          <div class="service-item">
+            <img src="" class="icon-circle">
+            <h6>Training</h6>
+            <p>A short maybe 2 sentences that explain training. A short maybe 2 sentences that explain training.</p>
+          </div>
+          <div class="service-item">
+            <img src="" class="icon-circle">
+            <h6>Neuromuscular Massage</h6>
+            <p>A short maybe 2 sentences that explain massage. A short maybe 2 sentences that explain massage.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
 <!-- Bootstrap 4 -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  
 </body>
 </html>

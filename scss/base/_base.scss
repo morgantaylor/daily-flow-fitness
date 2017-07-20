@@ -1,3 +1,9 @@
+// ======================
+// Base Element Rewrites
+// ======================  
+
+
+
 body {
   font-family: $pt-sans;
   background-color: #fff;
@@ -8,83 +14,4 @@ body {
   height: 100%;
 }
 
-a {
-    color: #168eea;
-}
 
-a,
-a:focus,
-a:hover,
-button,
-button:focus,
-.btn.focus,
-.btn:focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn.active.focus,
-.btn.active:focus {
-  outline: none;
-  text-transform: none;
-  text-decoration: none;
-}
-
-.btn.active, 
-.btn:active {
-  box-shadow: none;
-}
-
-button:hover, 
-button:focus, 
-.button:hover, 
-.button:focus {
-    background-color: transparent;
-}
-
-ol, ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 .h1 {
-    font-family: inherit;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #323b43;
-    margin: 30px 0 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 20px;
-    line-height: 1;
-}
-
-h1 {
-	font-size: 3.75rem;
-}
-
-.h2, h2 {
-    font-size: 38px;
-}
-
-.h3, h3 {
-    font-size: 32px;
-}
-
-.h4, h4 {
-    font-size: 24px;
-}
-
-
-.h6, h6 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-p {
-    line-height: 1.7;
-    margin: 15px 0;
-}
-
-section {
-    box-sizing: border-box;
-}

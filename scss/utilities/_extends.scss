@@ -25,12 +25,18 @@
   text-transform: uppercase;
 }
 
-// Width and height
-%width-height {
-  width: 100%;
-  height: auto;
-}
-
 %container-full-height {
 	height: 450px;
+}
+
+%dark-background {
+	background-color: #323b43 !important;
+    border-bottom: 1px solid #323b43;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    background: 0 0;
+} 
+
+%light-background {
+  background-color: #f4f7f9 !important;
+  border-bottom: 1px solid #eff3f6;
 }

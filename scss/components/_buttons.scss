@@ -2,58 +2,28 @@
 // Buttons
 // ==============   
 
-.button, 
-.button:hover {
-    -webkit-box-shadow: none;
-    text-shadow: none;
-}
 
 .button {
-    background: #fff;
-    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#fff));
-    background: -webkit-linear-gradient(top,#fff 0,#fff 100%);
-    background: linear-gradient(to bottom,#fff 0,#fff 100%);
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    color: #363c40;
-    text-decoration: none;
-    line-height: 21px;
-    margin-bottom: 20px;
-    padding: 8px 20px;
-    display: inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: none;
-    border: 1px solid #CED7DF;
+    margin: 0 5px;
+    padding: 10px 18px;
+    line-height: 1;
+    text-transform: none;
     border-radius: 3px;
+  
+    display: inline-block;
     position: relative;
-    top: 0;
-}
-
-.button.btn-outline, 
-button.btn-outline, 
-input[type=submit].btn-outline, 
-input[type=reset].btn-outline, 
-input[type=button].btn-outline {
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0,0,0,.3);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
-    font-size: 14px;
-    background: 0 0;
-    border: 1px solid #fff;
+    cursor: pointer;
+    min-height: 36px;
+    min-width: 88px;
+    align-items: center;
+    text-align: center;
     font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),
+    background-color .4s cubic-bezier(.25,.8,.25,1);
 }
-
-.button.large, 
-button.large, 
-input[type=submit].large, 
-input[type=reset].large, 
-input[type=button].large {
-    padding: 20px 40px;
-    font-size: 15.4px;
-}
-

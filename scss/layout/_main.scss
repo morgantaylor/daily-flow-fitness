@@ -1,72 +1,109 @@
-.page-content {
-    height: 100%;
-    display: block;
-    position: relative;
-    top: 60px;
-}
+// ==============
+// Main Sections
+// ==============   
 
-.container {
-    width: 100%;
-    margin: 0 auto;
+.page-wrapper {
+	top: 20px;
     position: relative;
+    height: auto;
+    margin: 0;
     padding: 0;
 }
+.page-content {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 0;
+    position: relative;
+}
 
-section {
-	&.paragraph {
-	    font-size: 16px;
-	    line-height: 1.6;
-	    color: #2a2f33;
+.horizontal-divider {
+    display: block;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid #eff3f6;
+    margin: 60px 0;
+}
 
-	    .container {
-		    max-width: 600px;
+
+// jumbotron backgrounds
+
+///////// HOME PAGE /////////
+
+.home {
+	&__cta {
+		@extend %dark-background; // needs to be img
+		text-align: center;
+	    height: 500px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    
+		// background: url(../img/8k-dumbells.png) no-repeat;
+	    // background-size: cover;
+	}
+
+	&__about {
+		@extend %light-background; // white background, cut out photo on right
+		display: flex;
+
+		.content {
+		    max-width: 500px;
+		    width: 100%;
+		    height: auto;
+		    margin: 50px auto 50px auto;
+		    align-items: flex-start;
+		    display: flex;
+		    flex-direction: column;
+
+		    p {
+	    	    text-align: left;
+		    }
 		}
+		
 	}
-	&.horizontal-divider {
-	    display: block;
-	    width: 100%;
-	    height: 0;
-	    border-bottom: 1px solid #eff3f6;
-	    margin: 60px 0;
-	} 
-	&.paragraph {
-	    margin-bottom: 40px;
+	&__services {
+		@extend %dark-background;
+		display: flex;
+		flex-direction: column;
+
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+	        width: 100%;
+		    margin: 50px auto 50px auto;
+
+		    .service-item {
+		    	margin-right: 30px;
+	    	    width: 350px;
+			    height: 350px;
+		    }
+		}
+
 	}
-	.section-title {
-	    padding-top: 30px;
-	    margin-top: -30px;
-	    line-height: 1.5;
+	&__testimonials {
+		@extend %light-background; // possible img
 	}
-	.dark-background {
-	    text-shadow: 0 1px 2px rgba(0,0,0,.3);
-	    background: 0 0;
-	} 
-	&.footer.grid {
-	    margin-bottom: 0;
-	}
-}
-.code-header {
-    display: block;
-    background: #59626a;
-    border-radius: 3px 3px 0 0;
-    border: 1px solid #59626a;
-    padding: 5px 10px;
-    font-size: 11px;
-    font-weight: 600;
 }
 
-.code-header, .label {
-    color: #fff;
-    text-transform: uppercase;
+
+.icon-circle {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
 }
 
-.code-sample {
-    display: block;
-    border-radius: 0 0 3px 3px;
-    border: 1px solid #eff3f6;
-    border-top: 0;
-    padding: 10px;
-    margin: 0 0 30px;
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	border: 1px solid #666;
+	border-radius: 3px;
+	padding: 15px;
+	width: 200px;
+	height: auto;
 }
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

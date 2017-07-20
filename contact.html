@@ -12,8 +12,8 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700" rel="stylesheet">
 
-<!-- Latest Bootstrap 4 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Custom styles for this website -->
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -21,69 +21,72 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-toggleable-sm bg-faded fixed-top"> <!--navbar-inverse for wite text, bg-faded for background-->
-      <button class="navbar-toggler navbar-toggler-right" type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarNavDropdown" 
-        aria-controls="navbarNavDropdown" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img class="logo d-inline-block align-top" src="../dailyflowfitness/img/NEW-logo-sm.png" alt="">Daily Flow Fitness
-      </a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" 
-              id="navbarDropdownMenuLink" 
-              data-toggle="dropdown" 
-              aria-haspopup="true" 
-              aria-expanded="false">
-                Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="services.html">Sport Specific Training</a>
-              <a class="dropdown-item" href="services.html">Message</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="movements.html" 
-              id="navbarDropdownMenuLink" 
-              data-toggle="dropdown" 
-              aria-haspopup="true" 
-              aria-expanded="false">
-                Movement Library
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="movements.html">Core</a>
-              <a class="dropdown-item" href="movements.html">Back</a>
-              <a class="dropdown-item" href="movements.html">Arms</a>
-              <a class="dropdown-item" href="movements.html">Legs</a>
-              <a class="dropdown-item" href="movements.html">Chest</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Cole</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="logo-sm d-inline-block align-top" src="./img/dff-logo-black.png" alt="">Daily Flow Fitness
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="services.html" 
+                id="servicesDropdown" 
+                data-toggle="dropdown"
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Services <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a href="services.html">Sport Specific Training</a></li>
+                <li><a href="services.html">Message</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="movements.html" 
+                id="movementsDropdown" 
+                data-toggle="dropdown"
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Movement Library <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="movementsDropdown">
+                <li><a href="movements.html">Core</a></li>
+                <li><a href="movements.html">Back</a></li>
+                <li><a href="movements.html">Arms</a></li>
+                <li><a href="movements.html">Legs</a></li>
+                <li><a href="movements.html">Chest</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html">About Cole</a>
+            </li>
+            <li class="active">
+              <a href="contact.html">Contact Me <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div> <!--container-fluid-->
     </nav>
   </header>
   <main></main>
   <footer></footer>
 
 <!-- Bootstrap 4 -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  
 </body>
 </html>

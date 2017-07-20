@@ -42,3 +42,57 @@
   -moz-box-sizing: $box-model; // Firefox <= 19
   box-sizing: $box-model;
 }
+
+// Button
+
+@mixin button-skin($prefix, $main-color) {
+    @if $prefix == 'btn-' {
+        background-color: $main-color;
+        color: $white;
+        border: 1px solid $main-color;
+
+        &:hover {
+            color: $white;
+            background-color: darken($main-color, 10%);
+            border-color: darken($main-color, 12%);
+        }
+    }
+    @if $prefix == 'btn-reverse-' {
+        color: $main-color;
+        background-color: $white;
+        border: 1px solid $main-color;
+
+        &:hover {
+            color: darken($main-color, 12%);
+            background-color: $white;
+            border-color: darken($main-color, 12%);
+        }
+    }
+    @if $prefix == 'link-' {
+        color: $main-color;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+        &:hover {
+            color: darken($main-color, 12%);
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+}
+
+/* example for button mixin
+
+.btn-green {@include button-skin('btn-', $xad-green);}
+.btn-papaya {@include button-skin('btn-', $papaya-red);}
+.btn-blue {@include button-skin('btn-', $true-blue);}
+
+.btn-reverse-green {@include button-skin('btn-reverse-', $xad-green);}
+.btn-reverse-papaya {@include button-skin('btn-reverse-', $papaya-red);}
+.btn-reverse-blue {@include button-skin('btn-reverse-', $true-blue);}
+
+.link-green {@include button-skin('link-', $xad-green);}
+.link-papaya {@include button-skin('link-', $papaya-red);}
+.link-blue {@include button-skin('link-', $true-blue);}
+
+*/
