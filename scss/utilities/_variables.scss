@@ -5,23 +5,25 @@
 
 // Descriptive Colors
 
-$snow             :     #EFF0F1;
-$white            :     #ffffff;
-$light-gray       :     #e2e2e2;
-$gray             :     #aaaaaa;
-$dark-gray        :     #727272;
-$black            :     #000000;
+$white        :   #ffffff;
+$black        :   #000000;
 
-$red              :     #ff0000;
-$green            :     #5cb85c;
-$blue             :     #0078a0;
+$dark-gray    :   #63666a;
+$mid-gray     :   #b8babb;
+$light-gray   :   #e7e8e8;
+
+
+$red          :   #e86160;
+$green        :   #5dcc20;
+$blue         :   #0083c6;
+$dark-blue    :   #212943;
 
 // Fonts
 
 $sans-serif   :     sans-serif;
 $verdana      :     verdana, $sans-serif;
 $pt-sans      :    'PT Sans', $sans-serif;
-$roboto-slab  :     'Roboto Slab', serif;
+$roboto-slab  :    'Roboto Slab', serif;
 
 // Font Sizes
 
@@ -33,4 +35,4 @@ $font-xsmall  :    .8rem;   // 12px
 
 // Component Colors
 $navigation-link-color   : $white;
-$home--services--bg      : $gray;
+$home--services--bg      : $mid-gray;

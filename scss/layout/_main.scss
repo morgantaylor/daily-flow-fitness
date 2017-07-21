@@ -3,19 +3,22 @@
 // ==============   
 
 .page-wrapper {
-	top: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	top: 70px;
     position: relative;
-    height: auto;
-    margin: 0;
-    padding: 0;
 }
-.page-content {
-    text-align: center;
+
+.container {
     width: 100%;
     margin: 0 auto;
-    height: auto;
     padding: 0;
-    position: relative;
+}
+
+.container-grid {
+	@extend .container;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .horizontal-divider {
@@ -27,16 +30,12 @@
 }
 
 
-// jumbotron backgrounds
-
 ///////// HOME PAGE /////////
 
 .home {
 	&__cta {
 		@extend %dark-background; // needs to be img
-		text-align: center;
-	    height: 500px;
-	    display: flex;
+		text-shadow: 0 1px 2px rgba(0,0,0,.3);
 	    justify-content: center;
 	    align-items: center;
 	    
@@ -46,64 +45,28 @@
 
 	&__about {
 		@extend %light-background; // white background, cut out photo on right
-		display: flex;
 
-		.content {
+		.container {
 		    max-width: 500px;
-		    width: 100%;
-		    height: auto;
-		    margin: 50px auto 50px auto;
-		    align-items: flex-start;
+		    text-align: left;
 		    display: flex;
 		    flex-direction: column;
-
-		    p {
-	    	    text-align: left;
-		    }
+		    justify-content: center;
 		}
 		
 	}
 	&__services {
 		@extend %dark-background;
-		display: flex;
 		flex-direction: column;
 
-		.content {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-	        width: 100%;
-		    margin: 50px auto 50px auto;
-
-		    .service-item {
-		    	margin-right: 30px;
-	    	    width: 350px;
-			    height: 350px;
-		    }
+		.container-grid {
+			justify-content: space-between;
+		    margin: 50px auto;
+		    max-width: 600px;
 		}
 
 	}
 	&__testimonials {
 		@extend %light-background; // possible img
 	}
-}
-
-
-.icon-circle {
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	border: 1px solid #ccc;
-}
-
-.service-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	border: 1px solid #666;
-	border-radius: 3px;
-	padding: 15px;
-	width: 200px;
-	height: auto;
 }

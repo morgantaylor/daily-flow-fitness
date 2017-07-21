@@ -3,10 +3,9 @@
 // ==============   
 
 
-.button {
+.btn {
     margin: 0 5px;
-    padding: 10px 18px;
-    line-height: 1;
+    padding: 15px 25px;
     text-transform: none;
     border-radius: 3px;
   
@@ -15,15 +14,30 @@
     cursor: pointer;
     min-height: 36px;
     min-width: 88px;
-    align-items: center;
     text-align: center;
-    font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     font-style: inherit;
     font-variant: inherit;
     font-family: inherit;
     text-decoration: none;
     overflow: hidden;
     transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),
-    background-color .4s cubic-bezier(.25,.8,.25,1);
+                background-color .4s cubic-bezier(.25,.8,.25,1);
+    white-space: nowrap;
+    vertical-align: middle;
 }
+
+.btn-gray {@include button-skin('btn-', $mid-gray);}
+.btn-green {@include button-skin('btn-', $green);}
+.btn-red {@include button-skin('btn-', $red);}
+.btn-blue {@include button-skin('btn-', $blue);}
+
+.btn-reverse-gray {@include button-skin('btn-reverse-', $mid-gray);}
+.btn-reverse-green {@include button-skin('btn-reverse-', $green);}
+.btn-reverse-red {@include button-skin('btn-reverse-', $red);}
+.btn-reverse-blue {@include button-skin('btn-reverse-', $blue);}
+
+.link-gray {@include button-skin('link-', $mid-gray);}
+.link-green {@include button-skin('link-', $green);}
+.link-red {@include button-skin('link-', $red);}
+.link-blue {@include button-skin('link-', $blue);}

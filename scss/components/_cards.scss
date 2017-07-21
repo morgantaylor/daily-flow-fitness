@@ -1,0 +1,61 @@
+//============
+// Cards
+//============
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+	width: 250px;
+	position: relative;
+	border: 1px solid $white;
+	color: $white;
+	border-radius: 3px;
+	padding: 115px 25px 25px 25px;
+	background-color: transparent;
+	box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
+
+	&.skin-light {
+		background-color: $white;
+		color: $dark-gray;
+	}
+
+	&.skin-dark {
+		background-color: $dark-gray;
+		color: $white;
+	}
+}
+
+.card-name {
+	font-size: 16px;
+	color: $dark-gray;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.card-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: $mid-gray; //lighter than the card name
+	display: block;
+}
+
+.card-display {
+    width: -webkit-calc(100% + 3px);
+    width: calc(100% + 3px);
+    height: 100px;
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    border-radius: 3px 3px 0 0;
+}
+
+// example of adding color to the card display area
+.card-display {
+	&.primaryColor {
+		background-color: #168eea;
+	}
+}
+

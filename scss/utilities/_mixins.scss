@@ -59,12 +59,12 @@
     }
     @if $prefix == 'btn-reverse-' {
         color: $main-color;
-        background-color: $white;
+        background-color: transparent;
         border: 1px solid $main-color;
 
         &:hover {
             color: darken($main-color, 12%);
-            background-color: $white;
+            background-color: transparent;
             border-color: darken($main-color, 12%);
         }
     }

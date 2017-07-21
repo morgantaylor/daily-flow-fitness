@@ -2,16 +2,119 @@
 // Base Element Rewrites
 // ======================  
 
+html,
+section {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
 
+html {
+    box-sizing: border-box
+}
 
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html,
 body {
   font-family: $pt-sans;
-  background-color: #fff;
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
-  color: #59626a;
-  height: 100%;
+  line-height: 1.5;
 }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    line-height: 1.4;
+    color: $dark-gray;
+    font-weight: 600;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 20px;
+    line-height: 1
+}
+
+.h1, h1 {
+    font-size: 44px;
+}
+.h2, h2 {
+    font-size: 38px;
+}
+.h3, h3 {
+    font-size: 32px;
+}
+.h4, h4 {
+    font-size: 26px;
+}
+.h5, h5 {
+    font-size: 20px;
+}
+.h6, h6 {
+    font-size: 16px;
+}
+
+blockquote {
+    padding: 10px 10px 10px 20px;
+    background: #f4f7f9;
+    border-radius: 0 3px 3px 0;
+    border-left: 2px solid #CED7DF;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+p {
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+a {
+    color: #168eea;
+
+    &:focus,
+    &:hover {
+        outine: none;
+    }
+}
+
+
+
+
 
 
