@@ -4,13 +4,16 @@
 	@extend %box-shadow;
 }
 
-.navbar-brand {
-	display: flex;
-	align-items:flex-end;
-	color: $black;
+.navbar-default {
 
-	.logo-sm {
-		max-height: 40px;
-		margin-right: 10px;
+	.navbar-brand {
+		display: flex;
+		align-items:flex-end;
+		color: $black !important;
+
+		.logo-sm {
+			max-height: 40px;
+			margin-right: 10px;
+		}
 	}
 }

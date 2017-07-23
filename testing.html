@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Daily Flow Fitness is run by Cole Citret. He is an experienced fitness professional who also specializes in neuromuscular massage and nutrition.">
+<meta name="keywords" content="keywords go here">
+<meta name="author" content="Cole Citret">
+<title>testing page for wordpress</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Custom styles for this website -->
+<!-- <link href="css/styles.css" rel="stylesheet" type="text/css"> -->
+ 
+
+</head>
+
+<body>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+.page-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    top: 70px;
+    position: relative;
+    max-width: 1100px;
+}
+
+.container-blog {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 250px;
+    position: relative;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 165px 0 25px 0;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
+    margin: 0 20px;
+}
+
+.blog-name {
+	font-size: 16px;
+	color: #63666a;
+	display: block;
+	margin: 0 15px 15px 15px;
+}
+
+.blog-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #b8babb;
+	display: block;
+    margin-left: 15px;
+}
+
+.blog-display {
+    width: -webkit-calc(100% + 3px);
+    width: calc(100% + 3px);
+    height: 160px;
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    border-radius: 3px 3px 0 0;
+}
+</style>
+	<div class="page-wrapper">
+		<div class="container wp-container">
+
+		
+			
+		</div>
+	</div>
+	<!-- Bootstrap 4 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+var MYBLOG_LIMIT = 4;
+var MYWRAPPER_CLASS = 'wp-container';
+ 
+var WP={open:function(b){var a={posts:function(){var d=MYBLOG_LIMIT;var e=0;var c={all:function(g){var f=b+"/api/get_recent_posts/";f+="?count="+d+"&page="+e+"&callback=?";jQuery.getJSON(f,function(l){var k=l.posts;for(var j=0;j<k.length;j++){var h=k[j];h.createComment=function(i,m){i.postId=h.id;a.comments().create(i,m)}}g(k)})},findBySlug:function(f,h){var g=b+"/api/get_post/";g+="?slug="+f+"&callback=?";jQuery.getJSON(g,function(i){h(i.post)})},limit:function(f){d=f;return c},page:function(f){e=f;return c}};return c},pages:function(){var c={findBySlug:function(d,f){var e=b+"/api/get_page/";e+="?slug="+d+"&callback=?";jQuery.getJSON(e,function(g){f(g.page)})}};return c},categories:function(){var c={all:function(e){var d=b+"/api/get_category_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.categories)})}};return c},tags:function(){var c={all:function(e){var d=b+"/api/get_tag_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.tags)})}};return c},comments:function(){var c={create:function(f,e){var d=b+"/api/submit_comment/";d+="?post_id="+f.postId+"&name="+f.name+"&email="+f.email+"&content="+f.content+"&callback=?";jQuery.getJSON(d,function(g){e(g)})}};return c}};return a}};
+ 
+var blog = WP.open('http://dailyflowfitness.com/movements/');
+blog.posts().all(function(posts){
+  for(var i = 0; i < posts.length; i++){
+    jQuery('.'+MYWRAPPER_CLASS).append(function(){
+      return (posts[i].thumbnail) ? '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a class="btn" href="'+ posts[i].url +'">Read More..</a><div>' : '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a class="btn" href="'+ posts[i].url +'">Read More..</a><div>';
+    });
+  }
+});
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="js/wordpress.js"></script> -->
+</body>
+</html>

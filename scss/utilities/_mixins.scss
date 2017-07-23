@@ -11,14 +11,6 @@
   color: $color;
 }
 
-// Border Radius
-
-@mixin b-radius ($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
 
 // Media Queries
 
@@ -32,15 +24,6 @@
   @else if $point == small {
     @media (min-width: 37.5em)  { @content; }
   }
-}
-
-
-// Box Sizing
-
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-  -moz-box-sizing: $box-model; // Firefox <= 19
-  box-sizing: $box-model;
 }
 
 // Button
@@ -81,18 +64,33 @@
     }
 }
 
-/* example for button mixin
+// Media Queries
 
-.btn-green {@include button-skin('btn-', $xad-green);}
-.btn-papaya {@include button-skin('btn-', $papaya-red);}
-.btn-blue {@include button-skin('btn-', $true-blue);}
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
 
-.btn-reverse-green {@include button-skin('btn-reverse-', $xad-green);}
-.btn-reverse-papaya {@include button-skin('btn-reverse-', $papaya-red);}
-.btn-reverse-blue {@include button-skin('btn-reverse-', $true-blue);}
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) { @content; }
+  }
+}
 
-.link-green {@include button-skin('link-', $xad-green);}
-.link-papaya {@include button-skin('link-', $papaya-red);}
-.link-blue {@include button-skin('link-', $true-blue);}
+// usage
+// .my-box {
+//  padding: 10px;
+  
+//  @include for-size(desktop-up) {
+//    padding: 20px;
+//  }
+//}
 
-*/

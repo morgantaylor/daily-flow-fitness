@@ -5,11 +5,11 @@
 html,
 section {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box
+    -moz-box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 *,
@@ -83,11 +83,31 @@ blockquote {
     border-left: 2px solid #CED7DF;
     font-size: 20px;
     margin: 30px 0;
+
+    footer {
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857143;
+        color: #777;
+
+        &:before {
+            content: '\2014 \00A0';
+        }
+    }
 }
 
 p {
     line-height: 1.7;
     margin: 15px 0;
+    font-family: $pt-sans;
+    font-weight: 400;
+}
+
+label {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 5px 0;
+    font-weight: bold;
 }
 
 ul ul,
@@ -104,17 +124,64 @@ ol {
   margin-bottom: 10px;
 }
 
-a {
+a,
+button {
+    font-family: $pt-sans;
+    text-decoration: none;
+    font-weight: 400;
     color: #168eea;
 
     &:focus,
+    &:active,
     &:hover {
+        color: inherit;
+        text-decoration: none;
         outine: none;
     }
 }
 
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    -webkit-apperance: button;
+    overflow: visible;
+}
 
+input {
+    margin: 0 0 5px 0;
+    padding: 6px 12px;
+    display: block;
+    font-family: $pt-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    width: 100%;
+    height: 400px;
+    color: $light-gray;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -wekit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $mid-gray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $mid-gray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $mid-gray;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $mid-gray;
+}
 
 
 

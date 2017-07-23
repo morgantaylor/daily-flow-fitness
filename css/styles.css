@@ -9,21 +9,6 @@
 .home__about, .home__testimonials {
   background-color: #f4f7f9 !important; }
 
-/* example for button mixin
-
-.btn-green {@include button-skin('btn-', $xad-green);}
-.btn-papaya {@include button-skin('btn-', $papaya-red);}
-.btn-blue {@include button-skin('btn-', $true-blue);}
-
-.btn-reverse-green {@include button-skin('btn-reverse-', $xad-green);}
-.btn-reverse-papaya {@include button-skin('btn-reverse-', $papaya-red);}
-.btn-reverse-blue {@include button-skin('btn-reverse-', $true-blue);}
-
-.link-green {@include button-skin('link-', $xad-green);}
-.link-papaya {@include button-skin('link-', $papaya-red);}
-.link-blue {@include button-skin('link-', $true-blue);}
-
-*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 article,
 aside,
@@ -7668,10 +7653,25 @@ blockquote {
   border-left: 2px solid #CED7DF;
   font-size: 20px;
   margin: 30px 0; }
+  blockquote footer {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777; }
+    blockquote footer:before {
+      content: '\2014 \00A0'; }
 
 p {
   line-height: 1.7;
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400; }
+
+label {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 5px 0;
+  font-weight: bold; }
 
 ul ul,
 ol ul,
@@ -7685,10 +7685,63 @@ ol {
   margin-top: 0;
   margin-bottom: 10px; }
 
-a {
+a,
+button {
+  font-family: "PT Sans", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
   color: #168eea; }
-  a:focus, a:hover {
+  a:focus, a:active, a:hover,
+  button:focus,
+  button:active,
+  button:hover {
+    color: inherit;
+    text-decoration: none;
     outine: none; }
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  -webkit-apperance: button;
+  overflow: visible; }
+
+input {
+  margin: 0 0 5px 0;
+  padding: 6px 12px;
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  width: 100%;
+  height: 400px;
+  color: #e7e8e8;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #e7e8e8;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -wekit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #b8babb; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b8babb; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b8babb; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b8babb; }
 
 .btn {
   margin: 0 5px;
@@ -7842,8 +7895,22 @@ a {
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box; }
+
+.page-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  top: 70px;
+  position: relative; }
+
+.container, .container-grid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.container-grid {
+  display: flex;
+  flex-wrap: wrap; }
 
 .hero {
   width: 100%;
@@ -7896,11 +7963,11 @@ a {
 .card-display.primaryColor {
   background-color: #168eea; }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
   display: flex;
   align-items: flex-end;
-  color: #000000; }
-  .navbar-brand .logo-sm {
+  color: #000000 !important; }
+  .navbar-default .navbar-brand .logo-sm {
     max-height: 40px;
     margin-right: 10px; }
 
@@ -7919,21 +7986,6 @@ header .logo {
   max-width: 80px;
   width: 100%;
   margin-right: 10px; }
-
-.page-wrapper {
-  margin: 0 auto;
-  overflow: hidden;
-  top: 70px;
-  position: relative; }
-
-.container, .container-grid {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0; }
-
-.container-grid {
-  display: flex;
-  flex-wrap: wrap; }
 
 .horizontal-divider {
   display: block;
