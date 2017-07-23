@@ -7983,13 +7983,24 @@ input {
 .blog-display {
   height: 160px; }
 
-.navbar-default .navbar-brand {
-  display: flex;
-  align-items: flex-end;
-  color: #000000 !important; }
-  .navbar-default .navbar-brand .logo-sm {
-    max-height: 40px;
-    margin-right: 10px; }
+.navbar-default {
+  background-color: #273039;
+  border-color: #273039; }
+  .navbar-default .navbar-brand {
+    display: flex;
+    align-items: flex-end;
+    color: #ffffff !important; }
+    .navbar-default .navbar-brand .logo-sm {
+      max-height: 40px;
+      margin-right: 10px; }
+  .navbar-default .navbar-nav {
+    margin-bottom: -4px !important; }
+    .navbar-default .navbar-nav > li > a {
+      color: #ffffff !important;
+      background-color: transparent !important;
+      border-bottom: 4px solid transparent; }
+    .navbar-default .navbar-nav > .active > a {
+      border-bottom: 4px solid #0083c6; }
 
 header .navbar-default {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2); }
