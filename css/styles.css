@@ -7903,14 +7903,19 @@ input {
   top: 70px;
   position: relative; }
 
-.container, .container-grid {
+.container, .container-grid, .container-blog {
   width: 100%;
   margin: 0 auto;
   padding: 0; }
 
-.container-grid {
+.container-grid, .container-blog {
   display: flex;
   flex-wrap: wrap; }
+
+.container-blog {
+  padding: 5px 0;
+  justify-content: center;
+  align-items: flex-start; }
 
 .hero {
   width: 100%;
@@ -7918,7 +7923,7 @@ input {
   height: 500px;
   display: flex; }
 
-.card {
+.card, .blog {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -7931,26 +7936,26 @@ input {
   padding: 115px 25px 25px 25px;
   background-color: transparent;
   box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2); }
-  .card.skin-light {
+  .card.skin-light, .skin-light.blog {
     background-color: #ffffff;
     color: #63666a; }
-  .card.skin-dark {
+  .card.skin-dark, .skin-dark.blog {
     background-color: #63666a;
     color: #ffffff; }
 
-.card-name {
+.card-name, .blog-name {
   font-size: 16px;
   color: #63666a;
   display: block;
   margin-bottom: 15px; }
 
-.card-title {
+.card-title, .blog-title {
   font-size: 12px;
   text-transform: uppercase;
   color: #b8babb;
   display: block; }
 
-.card-display {
+.card-display, .blog-display {
   width: -webkit-calc(100% + 3px);
   width: calc(100% + 3px);
   height: 100px;
@@ -7960,8 +7965,23 @@ input {
   top: -1px;
   border-radius: 3px 3px 0 0; }
 
-.card-display.primaryColor {
+.card-display.primaryColor, .primaryColor.blog-display {
   background-color: #168eea; }
+
+.blog {
+  border-radius: 6px;
+  padding: 165px 0 25px 0;
+  background-color: #ffffff;
+  margin: 0 20px; }
+
+.blog-name {
+  margin: 0 15px 15px 15px; }
+
+.blog-title {
+  margin-left: 15px; }
+
+.blog-display {
+  height: 160px; }
 
 .navbar-default .navbar-brand {
   display: flex;
@@ -7998,7 +8018,7 @@ header .logo {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center; }
-.home__about .container, .home__about .container-grid {
+.home__about .container, .home__about .container-grid, .home__about .container-blog {
   max-width: 500px;
   text-align: left;
   display: flex;
@@ -8006,7 +8026,7 @@ header .logo {
   justify-content: center; }
 .home__services {
   flex-direction: column; }
-  .home__services .container-grid {
+  .home__services .container-grid, .home__services .container-blog {
     justify-content: space-between;
     margin: 50px auto;
     max-width: 600px; }

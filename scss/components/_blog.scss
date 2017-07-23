@@ -1,0 +1,26 @@
+// ===============
+// Blog Components
+// ===============
+
+.blog {
+	@extend .card;
+    border-radius: 6px;
+    padding: 165px 0 25px 0;
+    background-color: $white;
+    margin: 0 20px;
+}
+
+.blog-name {
+	@extend .card-name;
+	margin: 0 15px 15px 15px;
+}
+
+.blog-title {
+	@extend .card-title;
+    margin-left: 15px;
+}
+
+.blog-display {
+	@extend .card-display;
+    height: 160px;
+}

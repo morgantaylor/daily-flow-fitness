@@ -27,3 +27,10 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
+.container-blog {
+    @extend .container-grid;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: flex-start;
+}
