@@ -17,7 +17,6 @@
 	&__cta {
 		@extend %dark-background; // needs to be img
 		text-shadow: 0 1px 2px rgba(0,0,0,.3);
-	    justify-content: center;
 	    align-items: center;
 	    
 		// background: url(../img/8k-dumbells.png) no-repeat;
@@ -34,13 +33,18 @@
 		    flex-direction: column;
 		    justify-content: center;
 		}
+
+		.img--about {
+		    max-width: 350px;
+		    width: 100%;
+		    margin: 0 auto;
+		}
 		
 	}
 	&__services {
 		@extend %dark-background;
-		flex-direction: column;
 
-		.container-grid {
+		.container-flex {
 			justify-content: space-between;
 		    margin: 50px auto;
 		    max-width: 600px;

@@ -13,74 +13,59 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700" rel="stylesheet">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
 <!-- Custom styles for this website -->
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
-    <nav class="navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img class="logo-sm d-inline-block align-top" src="./img/dff-white.svg" alt="">Daily Flow Fitness
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="services.html" 
-                id="servicesDropdown" 
-                data-toggle="dropdown"
-                role="button" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                  Services <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <li><a href="services.html">Sport Specific Training</a></li>
-                <li><a href="services.html">Message</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="http://www.dailyflowfitness.com/movements/archive" 
-                id="movementsDropdown" 
-                data-toggle="dropdown"
-                role="button" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                  Movement Library <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="movementsDropdown">
-                <li><a href="http://www.dailyflowfitness.com/movements/archive">Archive</a></li>
-                <li><a href="http://www.dailyflowfitness.com/movements/archive/core">Core</a></li>
-                <li><a href="http://www.dailyflowfitness.com/movements/archive/back">Back</a></li>
-                <li><a href="http://www.dailyflowfitness.com/movements/archive/arms">Arms</a></li>
-                <li><a href="http://www.dailyflowfitness.com/movements/archive/legs">Legs</a></li>
-                <li><a href="http://www.dailyflowfitness.com/movements/archive/chest">Chest</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="about.html">About Cole</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!--container-fluid-->
-    </nav>
-  </header>
+  <a class="header__brand">
+    <img class="header__logo" src="./img/dff-white.svg" alt="">
+    Daily Flow Fitness
+  </a>
+  <div class="header__nav">
+    <ul class="header__social">
+      <li class="header__social--item"><a>place</a></li>
+      <li class="header__social--item"><a>holder</a></li>
+      <li class="header__social--item"><a>for</a></li>
+      <li class="header__social--item"><a>social</a></li>
+    </ul>
+    <ul class="header__mainnav">
+      <li class="header__nav--item active">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="header__nav--item dropdown">
+        <a href="services.html">
+            Services <span class="caret"></span>
+        </a>
+        <ul class="dropdown__menu">
+          <li><a href="services.html">Sport Specific Training</a></li>
+          <li><a href="services.html">Message</a></li>
+        </ul>
+      </li>
+      <li class="header__nav--item dropdown">
+        <a href="http://www.dailyflowfitness.com/movements/archive" >
+            Movement Library <span class="caret"></span>
+        </a>
+        <ul class="dropdown__menu">
+          <li><a href="http://www.dailyflowfitness.com/movements/archive">Archive</a></li>
+          <li><a href="http://www.dailyflowfitness.com/movements/archive/core">Core</a></li>
+          <li><a href="http://www.dailyflowfitness.com/movements/archive/back">Back</a></li>
+          <li><a href="http://www.dailyflowfitness.com/movements/archive/arms">Arms</a></li>
+          <li><a href="http://www.dailyflowfitness.com/movements/archive/legs">Legs</a></li>
+          <li><a href="http://www.dailyflowfitness.com/movements/archive/chest">Chest</a></li>
+        </ul>
+      </li>
+      <li class="header__nav--item">
+        <a href="about.html">About Cole</a>
+      </li>
+      <li class="header__nav--item">
+        <a href="contact.html">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</header>
   <div class="page-wrapper">
     <section class="hero home__cta">
       <div class="container">
@@ -92,17 +77,19 @@
       </div>
     </section>
     <section class="hero home__about">
-        <div class="container">
+        <div class="container column">
           <h2 class="section-title">About Us</h2>
           <p>My goal is to teach you how to take care of your body through awareness and movement while having fun! Not only can you move pain free, but movement can actualy be enjoyables.</p>
           <a href="#" class="link">Learn more about Cole</a>
         </div>
-        <img class="img-about" src="../dailyflowfitness/img/about-me.png">
+        <div class="container column">
+          <img class="img--about column" src="../dailyflowfitness/img/cole.png">
+      </div>
     </section>
     <section class="hero home__services">
       <div class="container">
         <h2 class="section-title light-text">What We Do</h2>
-        <div class="container-grid service-grid">
+        <div class="container-flex service-grid">
           <div class="card">
             <span class="card-display"></span>
             <span class="card-title">Training</span>
@@ -119,7 +106,7 @@
     <section class="hero home__feed">
       <div class="container">
         <h2 class="section-title light-text">What we're talking about</h2>
-        <div class="container-grid blog-grid wp-container">
+        <div class="container-flex blog-grid wp-container">
 
         </div>
       </div>

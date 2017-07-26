@@ -26,6 +26,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+  padding:0
 }
 
 .h1,
@@ -120,8 +122,8 @@ ol ol {
 ul,
 ol {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin:0;
+  padding: 0;
 }
 
 a,
@@ -183,5 +185,15 @@ input {
   color: $mid-gray;
 }
 
+img {
+    height: 100%;
+    width: auto;
+}
 
+section {
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    display: flex;
+}
 

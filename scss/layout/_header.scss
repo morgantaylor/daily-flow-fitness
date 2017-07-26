@@ -1,22 +1,89 @@
 header {
-  .navbar-default {
-    box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
-  }
-  .navbar-default .container-fluid {
-    display: flex;
-    align-items: flex-end;
-  }
-  .navbar-header {
-    display: flex;
-    margin-right: auto !important;
-  }
-  .navbar-brand {
-    margin: 0;
-    height: auto;
-  }
-  .logo {
-    max-width: 80px;
-    width: 100%;
-    margin-right: 10px;
+  display: flex;
+  position: fixed;
+  background-color: $navbar-bg-color;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px 0 15px;
+  box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.header__brand {
+  margin: 0 auto 0 0;
+  height: auto;
+  color: $white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__logo {
+  max-width: 80px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header__social,
+.header__mainnav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__social--item,
+.header__nav--item {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.header__social--item {
+  a {
+    color: $navbar-link-color;
   }
 }
+
+.header__nav--item {
+  border-bottom: 2px solid transparent;
+
+  a {
+    color: $navbar-link-color;
+  }
+
+  &:hover {
+    color: inherit;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+
+.dropdown__menu {
+  display: none;
+}
+
+//   .navbar-default {
+//     box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
+//   }
+//   .navbar-default .container-fluid {
+//     display: flex;
+//     align-items: flex-end;
+//   }
+//   .navbar-header {
+//     display: flex;
+//     margin-right: auto !important;
+//   }
+//   .navbar-brand {
+//     margin: 0;
+//     height: auto;
+//   }
+//   .logo {
+//     max-width: 80px;
+//     width: 100%;
+//     margin-right: 10px;
+//   }
+// }
