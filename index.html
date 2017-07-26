@@ -35,18 +35,28 @@
       <li class="header__nav--item active">
         <a href="index.html">Home</a>
       </li>
+      <li class="header__nav--item">
+          <a href="about.html">
+            About  <span class="caret">&#9662;</span></a>
+          <ul class="dropdown__menu">
+            <li><a href="services.html">What is Flow?</a></li>
+            <li><a href="services.html">About Cole</a></li>
+            <li><a href="services.html">FAQ's</a></li>
+          </ul>
+        </li>
       <li class="header__nav--item dropdown">
         <a href="services.html">
-            Services <span class="caret"></span>
+            Services <span class="caret">&#9662;</span>
         </a>
         <ul class="dropdown__menu">
-          <li><a href="services.html">Sport Specific Training</a></li>
-          <li><a href="services.html">Message</a></li>
-        </ul>
+            <li><a href="services.html">Corporate Wellness</a></li>
+            <li><a href="services.html">Training Programs</a></li>
+            <li><a href="services.html">Message</a></li>
+          </ul>
       </li>
       <li class="header__nav--item dropdown">
         <a href="http://www.dailyflowfitness.com/movements/archive" >
-            Movement Library <span class="caret"></span>
+            Resources <span class="caret">&#9662;</span>
         </a>
         <ul class="dropdown__menu">
           <li><a href="http://www.dailyflowfitness.com/movements/archive">Archive</a></li>
@@ -56,9 +66,6 @@
           <li><a href="http://www.dailyflowfitness.com/movements/archive/legs">Legs</a></li>
           <li><a href="http://www.dailyflowfitness.com/movements/archive/chest">Chest</a></li>
         </ul>
-      </li>
-      <li class="header__nav--item">
-        <a href="about.html">About Cole</a>
       </li>
       <li class="header__nav--item">
         <a href="contact.html">Contact Me</a>
@@ -76,7 +83,7 @@
           </a>
       </div>
     </section>
-    <section class="hero home__about">
+    <section class="container--hero home__about">
         <div class="container column">
           <h2 class="section-title">About Us</h2>
           <p>My goal is to teach you how to take care of your body through awareness and movement while having fun! Not only can you move pain free, but movement can actualy be enjoyables.</p>
@@ -86,10 +93,10 @@
           <img class="img--about column" src="../dailyflowfitness/img/cole.png">
       </div>
     </section>
-    <section class="hero home__services">
+    <section class="container--hero home__services">
       <div class="container">
         <h2 class="section-title light-text">What We Do</h2>
-        <div class="container-flex service-grid">
+        <div class="container-flex">
           <div class="card">
             <span class="card-display"></span>
             <span class="card-title">Training</span>
@@ -103,7 +110,7 @@
         </div>
       </div>
     </section>
-    <section class="hero home__feed">
+    <section class="container--hero home__feed">
       <div class="container">
         <h2 class="section-title light-text">What we're talking about</h2>
         <div class="container-flex blog-grid wp-container">

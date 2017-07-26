@@ -15,6 +15,10 @@ header {
   color: $white;
   display: flex;
   align-items: flex-end;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 .header__logo {
@@ -28,18 +32,25 @@ header {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 
 .header__social,
 .header__mainnav {
   display: flex;
   align-items: flex-end;
+  position: relative;
+}
+
+.header__mainnav {
+  top: 5px;
 }
 
 .header__social--item,
 .header__nav--item {
   padding: 4px 8px;
   cursor: pointer;
+  position: relative;
 }
 
 .header__social--item {
@@ -48,23 +59,57 @@ header {
   }
 }
 
+.dropdown {
+
+  .caret {
+    color: $white;
+  }
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  width: 175px;
+  border-radius: 3px;
+  top: 40px;
+  left: 0px;
+
+  li {
+    display: block;
+    padding: 8px 10px;
+
+    a {
+      color: $dark-gray;
+      display: block;
+      margin: 0 auto;
+      line-height: 1;
+
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+}
+
 .header__nav--item {
   border-bottom: 2px solid transparent;
 
   a {
+    position: relative;
     color: $navbar-link-color;
   }
 
   &:hover {
     color: inherit;
     border-bottom: 2px solid $blue;
+
+    & .dropdown__menu {
+      display: block;
+    }
   }
 }
 
-
-.dropdown__menu {
-  display: none;
-}
 
 //   .navbar-default {
 //     box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
