@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 var MYBLOG_LIMIT = 4;
 var MYWRAPPER_CLASS = 'wp-container';
  
@@ -12,4 +12,3 @@ blog.posts().all(function(posts){
     });
   }
 });
-</script>

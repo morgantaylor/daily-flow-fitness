@@ -586,6 +586,7 @@ section {
 
 header {
   display: flex;
+  align-items: center;
   position: fixed;
   background-color: #273039;
   width: 100%;
@@ -595,7 +596,7 @@ header {
   z-index: 2; }
 
 .header__brand {
-  margin: 0 auto 0 0;
+  margin: 0 auto 10px 0;
   height: auto;
   color: #ffffff;
   display: flex;
@@ -604,15 +605,14 @@ header {
     color: #ffffff; }
 
 .header__logo {
-  max-width: 80px;
-  width: 100%;
-  margin-right: 10px; }
+  height: 100%;
+  margin-right: 10px;
+  max-height: 80px; }
 
 .header__nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
   position: relative; }
 
 .header__social,
@@ -622,11 +622,11 @@ header {
   position: relative; }
 
 .header__mainnav {
-  top: 5px; }
+  bottom: -3px; }
 
 .header__social--item,
 .header__nav--item {
-  padding: 4px 8px;
+  padding: 8px 15px;
   cursor: pointer;
   position: relative; }
 
@@ -634,37 +634,43 @@ header {
   color: #ffffff; }
 
 .dropdown .caret {
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 10px; }
 
 .dropdown__menu {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   background-color: #ffffff;
   width: 175px;
+  border-top: 5px solid #0083c6;
   border-radius: 3px;
-  top: 40px;
-  left: 0px; }
+  top: 100%;
+  left: 0;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: opacity .2s ease-in; }
   .dropdown__menu li {
-    display: block;
-    padding: 8px 10px; }
+    display: block; }
     .dropdown__menu li a {
+      padding: 8px 20px;
       color: #63666a;
       display: block;
       margin: 0 auto;
       line-height: 1; }
-      .dropdown__menu li a:hover {
-        background-color: #e7e8e8; }
+    .dropdown__menu li:hover {
+      background-color: #e7e8e8; }
 
 .header__nav--item {
-  border-bottom: 2px solid transparent; }
+  border-top: 3px solid transparent; }
   .header__nav--item a {
     position: relative;
     color: #ffffff; }
   .header__nav--item:hover {
     color: inherit;
-    border-bottom: 2px solid #0083c6; }
+    border-top: 3px solid #0083c6; }
     .header__nav--item:hover .dropdown__menu {
-      display: block; }
+      visibility: visible;
+      opacity: 1; }
 
 .horizontal-divider {
   display: block;
