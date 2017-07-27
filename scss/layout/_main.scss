@@ -47,10 +47,18 @@
 		.container-flex {
 			justify-content: space-between;
 		    margin: 50px auto;
-		    max-width: 600px;
+		    max-width: 1200px;
 		}
 
 	}
+	&__feed {
+		.container-flex {
+			justify-content: space-between;
+		    margin: 50px auto;
+		    max-width: 1200px;
+		}
+	}
+	
 	&__testimonials {
 		@extend %light-background; // possible img
 	}

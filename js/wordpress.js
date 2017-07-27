@@ -8,7 +8,7 @@ var blog = WP.open('http://dailyflowfitness.com/movements/');
 blog.posts().all(function(posts){
   for(var i = 0; i < posts.length; i++){
     jQuery('.'+MYWRAPPER_CLASS).append(function(){
-      return (posts[i].thumbnail) ? '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a class="btn" href="'+ posts[i].url +'">Read More..</a><div>' : '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a class="btn" href="'+ posts[i].url +'">Read More..</a><div>';
+      return (posts[i].thumbnail) ? '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a href="'+ posts[i].url +'">Read More..</a><div>' : '<div class="card lastpost_title" href="'+ posts[i].url +'"><img class="card-display" href="' + posts[i].url + '" src="' + posts[i].thumbnail + '"/><h4 class="card-title">' + posts[i].title + '</h4><p class="card-name"' + posts[i].excerpt + '</p><a href="'+ posts[i].url +'">Read More..</a><div>';
     });
   }
 });

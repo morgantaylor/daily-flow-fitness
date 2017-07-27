@@ -11,7 +11,7 @@ header {
 }
 
 .header__brand {
-  margin: 0 auto 10px 0;
+  margin: 5px auto 10px 5px;
   height: auto;
   color: $white;
   display: flex;
@@ -25,7 +25,7 @@ header {
 .header__logo {
   height: 100%;
   margin-right: 10px;
-  max-height: 80px;
+  max-height: 70px;
 }
 
 .header__nav {

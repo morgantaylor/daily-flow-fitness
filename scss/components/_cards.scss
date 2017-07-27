@@ -10,12 +10,12 @@
 	width: 250px;
 	margin: 0 20px;
 	position: relative;
-	border: 1px solid $white;
+	border: 1px solid transparent;
 	color: $white;
 	border-radius: 3px;
 	padding: 115px 25px 25px 25px;
 	background-color: transparent;
-	box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
+	// box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
 
 	&.skin-light {
 		background-color: $white;
