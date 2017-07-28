@@ -507,8 +507,10 @@ section {
   text-align: center; }
 
 .icon {
-  height: 25px;
-  fill: #ffffff; }
+  height: 28px;
+  border-radius: 50%;
+  fill: #ffffff;
+  cursor: pointer; }
   .icon:hover {
     fill: #e7e8e8; }
 
@@ -780,7 +782,7 @@ footer {
     .footer__mainnav-item a:hover {
       color: #ffffff; }
   .footer__socialnav-item {
-    height: 26px; }
+    height: 28px; }
     .footer__socialnav-item:first-child {
       padding-left: 0; }
 

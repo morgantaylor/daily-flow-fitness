@@ -1,7 +1,9 @@
 
 .icon {
-	height: 25px;
+	height: 28px;
+	border-radius: 50%;
 	fill: $white;
+	cursor: pointer;
 
 	&:hover {
 		fill: $light-gray;
