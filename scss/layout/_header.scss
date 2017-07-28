@@ -46,14 +46,16 @@ header {
   bottom: -3px;
 }
 
-.header__social--item,
-.header__nav--item {
+.header__socialnav-item,
+.header__nav-item {
   padding: 8px 15px;
   cursor: pointer;
   position: relative;
 }
 
-.header__social--item {
+.header__socialnav-item {
+  padding: 0 15px;
+
   a {
     color: $navbar-link-color;
   }
@@ -96,7 +98,7 @@ header {
   }
 }
 
-.header__nav--item {
+.header__nav-item {
   border-top: 3px solid transparent;
 
   a {

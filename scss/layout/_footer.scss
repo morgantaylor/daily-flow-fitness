@@ -1,3 +1,87 @@
 footer {
-    
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: $navbar-bg-color;
+	width: 100%;
+	height: auto;
+
+	.disclaimer {
+		display: flex;
+		margin-left: auto;
+		font-size: 12px;
+	}
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+	&__brand {
+		font-size: 25px;
+		color: $white;
+
+		&:hover {
+			color: darken($white, 10%);
+		}
+	}
+
+	&__logo {
+		height: 100%;
+		margin-bottom: 10px;
+		max-height: 70px;
+
+		&:hover {
+			color: darken($white, 10%);
+		}
+	}
+
+	.social h6 {
+		margin-bottom: 10px;
+		color: $white;
+	}
+
+	&__mainnav,
+	&__socialnav {
+		background-color: darken($navbar-bg-color, 5%);
+		color: $white;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding: 15px 20px;
+	}
+
+	&__socialnav {
+		background-color: $navbar-bg-color;
+		padding: 0;
+	}
+
+	&__mainnav-item,
+	&__socialnav-item {
+		padding: 0 15px;
+		cursor: pointer;
+	}
+
+	&__mainnav-item a {
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__socialnav-item {
+		height: 26px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	
 }

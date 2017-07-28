@@ -26,6 +26,12 @@
 		background-color: $dark-gray;
 		color: $white;
 	}
+
+	.btn {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
 }
 
 .card-name {
@@ -40,6 +46,10 @@
 	text-transform: uppercase;
 	color: $mid-gray; //lighter than the card name
 	display: block;
+
+	a {
+		color: $mid-gray; //lighter than the card name
+	}
 }
 
 .card-display {

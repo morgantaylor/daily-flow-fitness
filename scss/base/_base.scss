@@ -30,6 +30,7 @@ body {
   padding:0
 }
 
+
 .h1,
 .h2,
 .h3,
@@ -56,14 +57,22 @@ h4,
 h5,
 h6 {
     margin-bottom: 20px;
-    line-height: 1
+    line-height: 1;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 .h1, h1 {
     font-size: 44px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
 }
 .h2, h2 {
     font-size: 38px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
 }
 .h3, h3 {
     font-size: 32px;
@@ -124,6 +133,11 @@ ol {
   list-style-type: none;
   margin:0;
   padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
 }
 
 a,
