@@ -13,6 +13,14 @@
     text-transform: capitalize;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
 .lead {
     font-size: 17.5px;
     line-height: 28px;
@@ -22,10 +30,16 @@
     color: $white;
 }
 
-.home__services {
-    .section-title {
-        margin-top: 60px;
-        text-align: center;
-    }
+.brand-name {
+    font-weight: bold;
 }
 
+.list-unstyled {
+    list-style-type: none;
+    text-align: left;
+}
+
+.list-styled {
+    list-style-type: disc;
+    text-align: left;
+}

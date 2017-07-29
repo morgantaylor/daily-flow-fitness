@@ -6,11 +6,16 @@ footer {
 	background-color: $navbar-bg-color;
 	width: 100%;
 	height: auto;
+	position: relative;
 
 	.disclaimer {
 		display: flex;
 		margin-left: auto;
 		font-size: 12px;
+	}
+
+	a:hover {
+		@extend %text-none;
 	}
 }
 

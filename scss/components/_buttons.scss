@@ -40,3 +40,26 @@
 .link-green {@include button-skin('link-', $green);}
 .link-red {@include button-skin('link-', $red);}
 .link-blue {@include button-skin('link-', $blue);}
+
+.btn-dark-bg.link {
+    &-gray {
+        &:hover {
+           color:  lighten($mid-gray, 15%);
+        }
+    }
+    &-blue {
+        &:hover {
+           color:  lighten($blue, 15%);
+        }
+    }
+    &-red {
+        &:hover {
+           color:  lighten($red, 15%);
+        }
+    }
+    &-green {
+        &:hover {
+           color:  lighten($green, 15%);
+        }
+    }
+}
