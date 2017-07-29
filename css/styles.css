@@ -669,6 +669,12 @@ section {
 .img--assesment {
   max-width: 500px; }
 
+.img--flow {
+  background-image: url("../img/flow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 header {
   display: flex;
   align-items: center;
