@@ -30,13 +30,21 @@
 	height: 500px;
 }
 
-.flex-col-center {
+.w-800 {
+	max-width: 800px;
+}
+
+.flex-col {
+	@extend section;
 	margin: 0 auto;
-	max-width: 500px;
-	text-align: left;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.flex-col-w500 {
+	@extend .flex-col;
+	max-width: 500px;
+	text-align: left;
 }
 
 .flex-cards {
@@ -56,15 +64,6 @@
 	padding: 0 15px;
 }
 
-.banner {
-
-	&__cta {
-		text-shadow: 0 1px 2px rgba(0,0,0,.3);
-	    align-items: center;
-	}
-}
-
 .m-tb-40 {
 	margin: 40px auto;
 }
-
