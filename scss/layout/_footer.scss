@@ -20,15 +20,15 @@ footer {
 }
 
 .footer {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    padding: 10px 30px 0 30px;
 
 	&__brand {
 		font-size: 25px;
 		color: $white;
+		margin-right: auto;
+		cursor: pointer;
 
 		&:hover {
 			color: darken($white, 10%);
@@ -45,26 +45,35 @@ footer {
 		}
 	}
 
-	.social h6 {
-		margin-bottom: 10px;
-		color: $white;
+	.social {
+	    display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    max-width: 335px;
+	    width: 100%;
+
+			h6 {
+			    color: $white;
+			    width: 130px;
+			    padding-right: 20px;
+		}
 	}
 
 	&__mainnav,
 	&__socialnav {
-		background-color: darken($navbar-bg-color, 5%);
+		// background-color: darken(, 5%);
 		color: $white;
 		list-style-type: none;
 		display: flex;
 		align-items: center;
 		width: 100%;
 		height: auto;
-		padding: 15px 20px;
+		padding: 0 35px 10px 16px;
 	}
 
 	&__socialnav {
-		background-color: $navbar-bg-color;
 		padding: 0;
+		max-width: 205px;
 	}
 
 	&__mainnav-item,
@@ -75,6 +84,7 @@ footer {
 
 	&__mainnav-item a {
 		color: $white;
+		cursor: pointer;
 
 		&:hover {
 			color: $white;
@@ -83,6 +93,7 @@ footer {
 
 	&__socialnav-item {
 		height: 28px;
+		cursor: pointer;
 
 		&:first-child {
 			padding-left: 0;

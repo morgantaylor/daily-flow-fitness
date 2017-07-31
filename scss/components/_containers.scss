@@ -67,3 +67,36 @@
 .m-tb-40 {
 	margin: 40px auto;
 }
+
+.banner {
+
+	&__price {
+		background-color: #b8babb;
+
+		h5 {
+			color: #2a2f33;
+		}
+	}
+}
+
+.table__paragraph {
+	@extend .paragraph;
+	text-align: left;
+	display: flex;
+}
+
+.table__description,
+.table__price {
+	width: 250px;
+	text-align: left;
+}
+
+.table__description {
+
+}
+
+.table__price {
+
+}
+
+

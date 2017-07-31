@@ -224,7 +224,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 20px;
-  line-height: 1;
+  line-height: 1.4;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
@@ -234,7 +234,8 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-size: 44px;
   -webkit-margin-before: 0.83em;
-  -webkit-margin-after: 0.83em; }
+  -webkit-margin-after: 0.83em;
+  margin-bottom: 1.5em; }
 
 .h2, h2 {
   font-family: "Roboto", sans-serif;
@@ -369,6 +370,38 @@ section, .flex-col, .flex-col-w500 {
   text-align: center;
   height: auto;
   display: flex; }
+
+table {
+  width: 100%;
+  max-width: 100%; }
+
+th {
+  text-align: left;
+  padding: 0; }
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > thead > tr > th {
+  padding: 8px;
+  width: 35%;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd; }
+
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd; }
+
+table > caption + thead > tr:first-child > td,
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > td,
+table > thead:first-child > tr:first-child > th {
+  border-top: 0; }
 
 .btn {
   margin: 0 5px;
@@ -508,7 +541,7 @@ section, .flex-col, .flex-col-w500 {
 .btn-dark-bg.link-green:hover {
   color: #87e454; }
 
-.paragraph, .paragraph-light {
+.paragraph, .paragraph-light, .table__paragraph {
   font-size: 16px;
   line-height: 1.6;
   color: #2a2f33;
@@ -538,8 +571,7 @@ section, .flex-col, .flex-col-w500 {
 
 .cta {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  align-items: center;
-  margin-bottom: 20px; }
+  align-items: center; }
 
 .brand-name {
   font-weight: bold; }
@@ -610,6 +642,20 @@ section, .flex-col, .flex-col-w500 {
 
 .m-tb-40 {
   margin: 40px auto; }
+
+.banner__price {
+  background-color: #b8babb; }
+  .banner__price h5 {
+    color: #2a2f33; }
+
+.table__paragraph {
+  text-align: left;
+  display: flex; }
+
+.table__description,
+.table__price {
+  width: 250px;
+  text-align: left; }
 
 .card, .blog {
   display: flex;
@@ -1057,7 +1103,7 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  background-color: #273039;
+  background-color: #1f262d;
   width: 100%;
   height: auto;
   padding: 10px 15px 0 15px;
@@ -1149,7 +1195,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #273039;
+  background-color: #1f262d;
   width: 100%;
   height: auto;
   position: relative; }
@@ -1161,12 +1207,12 @@ footer {
 .footer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px; }
+  padding: 10px 30px 0 30px; }
   .footer__brand {
     font-size: 25px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-right: auto;
+    cursor: pointer; }
     .footer__brand:hover {
       color: #e6e6e6; }
   .footer__logo {
@@ -1175,30 +1221,38 @@ footer {
     max-height: 70px; }
     .footer__logo:hover {
       color: #e6e6e6; }
-  .footer .social h6 {
-    margin-bottom: 10px;
-    color: #ffffff; }
+  .footer .social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 335px;
+    width: 100%; }
+    .footer .social h6 {
+      color: #ffffff;
+      width: 130px;
+      padding-right: 20px; }
   .footer__mainnav, .footer__socialnav {
-    background-color: #1d232a;
     color: #ffffff;
     list-style-type: none;
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 15px 20px; }
+    padding: 0 35px 10px 16px; }
   .footer__socialnav {
-    background-color: #273039;
-    padding: 0; }
+    padding: 0;
+    max-width: 205px; }
   .footer__mainnav-item, .footer__socialnav-item {
     padding: 0 15px;
     cursor: pointer; }
   .footer__mainnav-item a {
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
     .footer__mainnav-item a:hover {
       color: #ffffff; }
   .footer__socialnav-item {
-    height: 28px; }
+    height: 28px;
+    cursor: pointer; }
     .footer__socialnav-item:first-child {
       padding-left: 0; }
 
