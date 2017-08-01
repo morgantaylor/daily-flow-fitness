@@ -58,10 +58,10 @@ h5,
 h6 {
     margin-bottom: 20px;
     line-height: 1.4;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 }
 
 .h1, h1 {
@@ -75,7 +75,6 @@ h6 {
     font-family: $roboto;
     font-size: 38px;
     -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
 }
 .h3, h3 {
     font-family: $ptsans;

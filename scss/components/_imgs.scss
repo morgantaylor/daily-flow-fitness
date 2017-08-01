@@ -12,6 +12,8 @@
 
 .header__logo {
     max-height: 70px;
+    width: auto;
+    margin-right: 20px;
 }
 
 .img--assesment {
@@ -26,8 +28,17 @@
     height: 650px;
 }
 
+.img--coporate {
+	background-image: url('../img/corporate-banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+}
+
 .overlay {
 	width: 100%;
+	height: 100%;
 	background: rgba(19,19,19,1);
 	background: -moz-linear-gradient(top, rgba(19,19,19,1) 0%, rgba(19,19,19,0.59) 41%, rgba(28,28,28,0.4) 60%, rgba(171,171,171,0) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19,19,19,1)), color-stop(41%, rgba(19,19,19,0.59)), color-stop(60%, rgba(28,28,28,0.4)), color-stop(100%, rgba(171,171,171,0)));

@@ -17,8 +17,13 @@ header {
 .header__brand {
   margin: 5px auto 10px 5px;
   height: auto;
-  color: #ffffff;
-  max-width: 100px;
+  display: flex;
+  align-items: flex-end;
+  max-width: 350px;
+  font-size: 25px;
+  color: $white;
+  margin-right: auto;
+  cursor: pointer;
 
   &:hover {
     color: $white;

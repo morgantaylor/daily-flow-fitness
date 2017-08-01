@@ -225,10 +225,10 @@ h5,
 h6 {
   margin-bottom: 20px;
   line-height: 1.4;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0; }
 
 .h1, h1 {
   font-family: "Roboto", sans-serif;
@@ -240,8 +240,7 @@ h6 {
 .h2, h2 {
   font-family: "Roboto", sans-serif;
   font-size: 38px;
-  -webkit-margin-before: 0.83em;
-  -webkit-margin-after: 0.83em; }
+  -webkit-margin-before: 0.83em; }
 
 .h3, h3 {
   font-family: "PT Sans", sans-serif;
@@ -583,7 +582,7 @@ table > thead:first-child > tr:first-child > th {
 .list-styled {
   list-style-type: disc;
   text-align: left;
-  margin-left: 20px; }
+  margin: 20px 0 0 20px; }
 
 .icon {
   height: 28px;
@@ -603,7 +602,7 @@ table > thead:first-child > tr:first-child > th {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  padding-top: 102px; }
+  padding-top: 95px; }
 
 .panel-bg-dark {
   margin: 0 auto; }
@@ -729,7 +728,9 @@ table > thead:first-child > tr:first-child > th {
   max-width: 500px; }
 
 .header__logo {
-  max-height: 70px; }
+  max-height: 70px;
+  width: auto;
+  margin-right: 20px; }
 
 .img--assesment {
   max-width: 500px; }
@@ -741,8 +742,16 @@ table > thead:first-child > tr:first-child > th {
   background-size: cover;
   height: 650px; }
 
+.img--coporate {
+  background-image: url("../img/corporate-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px; }
+
 .overlay {
   width: 100%;
+  height: 100%;
   background: #131313;
   background: -moz-linear-gradient(top, #131313 0%, rgba(19, 19, 19, 0.59) 41%, rgba(28, 28, 28, 0.4) 60%, rgba(171, 171, 171, 0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #131313), color-stop(41%, rgba(19, 19, 19, 0.59)), color-stop(60%, rgba(28, 28, 28, 0.4)), color-stop(100%, rgba(171, 171, 171, 0)));
@@ -1113,8 +1122,13 @@ header {
 .header__brand {
   margin: 5px auto 10px 5px;
   height: auto;
+  display: flex;
+  align-items: flex-end;
+  max-width: 350px;
+  font-size: 25px;
   color: #ffffff;
-  max-width: 100px; }
+  margin-right: auto;
+  cursor: pointer; }
   .header__brand:hover {
     color: #ffffff; }
 
@@ -1227,7 +1241,7 @@ footer {
     flex-wrap: wrap;
     max-width: 335px;
     width: 100%; }
-    .footer .social h6 {
+    .footer .social p {
       color: #ffffff;
       width: 130px;
       padding-right: 20px; }
