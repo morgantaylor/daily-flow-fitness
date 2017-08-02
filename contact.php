@@ -156,7 +156,5 @@ button {
 </fieldset>
 <button type="submit" class="btn-green">Submit</button>
 </form>
-</body>
-</html>
 
 
