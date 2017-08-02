@@ -402,6 +402,16 @@ table > thead:first-child > tr:first-child > td,
 table > thead:first-child > tr:first-child > th {
   border-top: 0; }
 
+iframe {
+  max-width: 600px;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
 .btn {
   margin: 0 5px;
   padding: 15px 25px;

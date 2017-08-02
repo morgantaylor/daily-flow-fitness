@@ -254,3 +254,17 @@ table>thead:first-child>tr:first-child>th {
     border-top: 0;
 }
 
+///////// iframe //////////
+
+iframe {
+    max-width: 600px;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+   
+
