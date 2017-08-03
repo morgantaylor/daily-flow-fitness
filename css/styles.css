@@ -336,7 +336,7 @@ input {
   line-height: 1.42857143;
   width: 100%;
   height: 40px;
-  color: #e7e8e8;
+  color: #63666a;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #e7e8e8;
@@ -1269,6 +1269,32 @@ header {
   padding: 0;
   width: 100%; }
 
+#contact-form .form-group {
+  margin-bottom: 15px; }
+
+#contact-form .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373; }
+
+#contact-form .has-error .checkbox,
+#contact-form .has-error .checkbox-inline,
+#contact-form .has-error .control-label,
+#contact-form .has-error .help-block,
+#contact-form .has-error .radio,
+#contact-form .has-error .radio-inline,
+#contact-form .has-error.checkbox label,
+#contact-form .has-error.checkbox-inline label,
+#contact-form .has-error.radio label,
+#contact-form .has-error.radio-inline label {
+  color: #a94442; }
+
+#contact-form .has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form input[type="tel"],
@@ -1316,20 +1342,7 @@ header {
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  outline: 0;
   border: 1px solid #999; }
-
-::-webkit-input-placeholder {
-  color: #888; }
-
-:-moz-placeholder {
-  color: #888; }
-
-::-moz-placeholder {
-  color: #888; }
-
-:-ms-input-placeholder {
-  color: #888; }
 
 footer {
   display: flex;

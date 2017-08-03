@@ -123,17 +123,19 @@
           </div>
           <div class="column w-800 text-left">
             <div class="centered">  
-              <form id="contact-form" method="post" action="contact.php" role="form">
+              <form id="contact-form" method="post" action="contact.php" role="form" data-toggle="validator">
                 <h3>Quick Contact</h3>
                 <h4>Contact us today, and get reply with in 24 hours!</h4>
                 <div class="messages"></div>
-                <fieldset>
+                <fieldset class="form-group">
                   <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  <div class="help-block with-errors"></div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-group">
                   <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  <div class="help-block with-errors"></div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-group">
                   <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
                 </fieldset>
                 <fieldset>
@@ -182,6 +184,7 @@
 <!-- Bootstrap 4 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
