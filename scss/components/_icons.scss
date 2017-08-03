@@ -9,3 +9,9 @@
 		fill: $light-gray;
 	}
 }
+
+.icon-black {
+	@extend .icon;
+	fill: $black;
+
+}
