@@ -520,6 +520,15 @@ abbr[title] {
     background-color: transparent;
     border-color: #005b89; }
 
+.link-white {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid transparent; }
+  .link-white:hover {
+    color: #e0e0e0;
+    background-color: transparent;
+    border-color: transparent; }
+
 .link-gray {
   color: #b8babb;
   background-color: transparent;
@@ -595,7 +604,8 @@ abbr[title] {
 
 .cta {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
 
 .brand-name {
   font-weight: bold; }
@@ -619,6 +629,8 @@ abbr[title] {
 
 .icon-black {
   fill: #000000; }
+  .icon-black:hover {
+    fill: #0083c6; }
 
 *,
 *:after,
@@ -662,10 +674,13 @@ abbr[title] {
   width: 100%; }
 
 .centered {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
 
 .column {
   flex-basis: 45%;
+  max-width: 500px;
   padding: 0 15px; }
 
 .m-tb-40 {
@@ -707,6 +722,18 @@ abbr[title] {
   top: -2px;
   right: -21px;
   color: inherit; }
+
+.training-navigation {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #0083c6;
+  padding: 20px 0; }
+  .training-navigation a {
+    margin: 5px 10px; }
 
 .card, .blog {
   display: flex;
@@ -787,26 +814,26 @@ abbr[title] {
 .img--assesment {
   max-width: 500px; }
 
-.img--flow {
-  background-image: url("../img/flow.jpg");
+.img--banner, .img--flow, .img--coporate, .img--contact, .img--training {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 250px; }
+
+.img--flow {
+  background-image: url("../img/flow.jpg");
   height: 650px; }
 
 .img--coporate {
-  background-image: url("../img/corporate-banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px; }
+  background-image: url("../img/corporate-banner.jpg"); }
 
 .img--contact {
   background-image: url("../img/contact-banner.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px; }
+  background-position: bottom center; }
+
+.img--training {
+  background-image: url("../img/training-banner.jpg");
+  background-position: 0 44%; }
 
 .overlay {
   width: 100%;

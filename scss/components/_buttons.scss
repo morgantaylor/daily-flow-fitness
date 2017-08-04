@@ -36,6 +36,7 @@
 .btn-reverse-red {@include button-skin('btn-reverse-', $red);}
 .btn-reverse-blue {@include button-skin('btn-reverse-', $blue);}
 
+.link-white {@include button-skin('link-', $white);}
 .link-gray {@include button-skin('link-', $mid-gray);}
 .link-green {@include button-skin('link-', $green);}
 .link-red {@include button-skin('link-', $red);}

@@ -14,4 +14,8 @@
 	@extend .icon;
 	fill: $black;
 
+	&:hover {
+		fill: $blue;
+	}
+
 }

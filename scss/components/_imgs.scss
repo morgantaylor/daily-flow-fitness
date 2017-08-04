@@ -20,28 +20,34 @@
 	max-width: 500px;
 }
 
-.img--flow {
-	background-image: url('../img/flow.jpg');
+.img--banner {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 250px;
+}
+
+.img--flow {
+	@extend .img--banner;
+	background-image: url('../img/flow.jpg');
     height: 650px;
 }
 
 .img--coporate {
+	@extend .img--banner;
 	background-image: url('../img/corporate-banner.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 250px;
 }
 
 .img--contact {
+	@extend .img--banner;
 	background-image: url('../img/contact-banner.jpg');
 	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 250px;
+}
+
+.img--training {
+	@extend .img--banner;
+	background-image: url('../img/training-banner.jpg');
+    background-position: 0 44%;
 }
 
 .overlay {

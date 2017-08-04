@@ -58,10 +58,13 @@
 
 .centered {
 	margin: 0 auto;	
+	position: relative;
+	overflow: hidden;
 }
 
 .column {
 	flex-basis: 45%;
+	max-width: 500px;
 	padding: 0 15px;
 }
 
@@ -127,4 +130,18 @@
     color: inherit;
 }
 
+.training-navigation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color: $blue;
+    padding: 20px 0; 
+
+    a {
+    	margin: 5px 10px;
+    }
+}
 
