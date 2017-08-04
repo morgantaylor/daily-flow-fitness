@@ -26,7 +26,6 @@ $(function () {
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
 
-        // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
 
@@ -35,8 +34,8 @@ $(function () {
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                success: function (data)
-                {
+                success: function (data) {
+                    console.log(data);
                     // data = JSON object that contact.php returns
 
                     // we recieve the type of the message: success x danger and apply it to the 
