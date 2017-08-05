@@ -13,7 +13,7 @@
 	border: 1px solid transparent;
 	color: $white;
 	border-radius: 3px;
-	padding: 115px 25px 25px 25px;
+	padding: 25px;
 	background-color: transparent;
 	// box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
 
@@ -60,6 +60,16 @@
     left: -1px;
     top: -1px;
     border-radius: 3px 3px 0 0;
+}
+
+.card-icon {
+	@extend .card-display;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+    height: auto;
 }
 
 // example of adding color to the card display area

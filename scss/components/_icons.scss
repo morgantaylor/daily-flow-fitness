@@ -1,21 +1,35 @@
 
 .icon {
-	height: 28px;
-	border-radius: 50%;
-	fill: $white;
 	cursor: pointer;
 
-	&:hover {
-		fill: $light-gray;
+	&-white {
+		fill: $white;
+
+		&:hover {
+			fill: $light-gray;
+		}
+	}
+
+	&-black {
+		fill: $black;
+
+		&:hover {
+			fill: $blue;
+		}
+	}
+
+	&-circle {
+		border-radius: 50%;
 	}
 }
 
-.icon-black {
+.icon-social {
 	@extend .icon;
-	fill: $black;
+	@extend .icon-circle;
+	height: 28px;
+}
 
-	&:hover {
-		fill: $blue;
-	}
-
+.icon-medium {
+	@extend .icon;
+	height: 100px;
 }
