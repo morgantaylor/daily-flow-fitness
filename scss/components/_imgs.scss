@@ -3,7 +3,13 @@
 // ============== 
 
 .img--about {
-    max-width: 338px;
+    max-width: 335px;
+    padding: 0 20px;
+    margin: 0 0 -27px 0;
+
+    @include for-size(tablet-portrait-up) {
+    	padding: 0 20px;
+	}
 }
 
 .img--cole {

@@ -2,22 +2,14 @@
 // Base Element Rewrites
 // ======================  
 
+*,
+*:after,
+*:before,
 html,
 section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-}
-
-html {
     box-sizing: border-box;
-}
-
-*,
-:after,
-:before {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit
 }
 
 html,
@@ -219,6 +211,7 @@ section {
     text-align: center;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 table {

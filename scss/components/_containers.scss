@@ -2,18 +2,14 @@
 // Containers
 // ============== 
 
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-
 .page {
 	margin: 0 auto;
 	overflow: hidden;
     position: relative;
-    padding-top: 95px;
+
+    @include for-size(tablet-portrait-up) {
+    	padding-top: 95px;
+	}
 }
 
 .panel-bg-dark {
@@ -27,7 +23,11 @@
 }
 
 .panel-height-500 {
-	height: 500px;
+	height: auto;
+
+	@include for-size(desktop-up) {
+      height: 500px;
+    }
 }
 
 .w-800 {
@@ -50,22 +50,25 @@
 .flex-cards {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
     margin: 50px auto;
     max-width: 1200px;
     width: 100%;
+
+    @include for-size(desktop-up) {
+      justify-content: space-between;
+    }
 }
 
 .centered {
 	margin: 0 auto;	
 	position: relative;
-	overflow: hidden;
+    padding: 20px;
 }
 
 .column {
-	flex-basis: 45%;
 	max-width: 500px;
-	padding: 0 15px;
+	padding: 20px;
 }
 
 .m-tb-40 {
