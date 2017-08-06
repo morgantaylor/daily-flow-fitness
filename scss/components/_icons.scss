@@ -29,6 +29,12 @@
 	height: 28px;
 }
 
+.icon-small {
+	@extend .icon;
+    height: 70px;
+    padding: 10px 20px;
+}
+
 .icon-medium {
 	@extend .icon;
 	height: 100px;

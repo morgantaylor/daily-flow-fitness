@@ -32,6 +32,7 @@
 
 .w-800 {
 	max-width: 800px;
+	padding: 0 20px;
 }
 
 .flex-col {
@@ -39,12 +40,6 @@
 	margin: 0 auto;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.flex-col-w500 {
-	@extend .flex-col;
-	max-width: 500px;
-	text-align: left;
 }
 
 .flex-cards {
@@ -67,7 +62,9 @@
 }
 
 .column {
+	flex-direction: column;
 	max-width: 500px;
+	text-align: left;
 	padding: 20px;
 }
 
