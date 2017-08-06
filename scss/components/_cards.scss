@@ -42,11 +42,20 @@
 }
 
 .card-title {
-	font-size: 14px;
-	text-transform: uppercase;
 	display: block;
 
 	a {
+		color: $mid-gray; //lighter than the card name
+	    font-weight: 700;
+	    font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.dark-text a {
+	color: $black;
+
+	&:hover {
 		color: $mid-gray; //lighter than the card name
 	}
 }

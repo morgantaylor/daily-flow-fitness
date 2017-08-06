@@ -26,11 +26,13 @@
     vertical-align: middle;
 }
 
+.btn-white {@include button-skin('btn-', $white);}
 .btn-gray {@include button-skin('btn-', $mid-gray);}
 .btn-green {@include button-skin('btn-', $green);}
 .btn-red {@include button-skin('btn-', $red);}
 .btn-blue {@include button-skin('btn-', $blue);}
 
+.btn-reverse-white {@include button-skin('btn-reverse-', $white);}
 .btn-reverse-gray {@include button-skin('btn-reverse-', $mid-gray);}
 .btn-reverse-green {@include button-skin('btn-reverse-', $green);}
 .btn-reverse-red {@include button-skin('btn-reverse-', $red);}

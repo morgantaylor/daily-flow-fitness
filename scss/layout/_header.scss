@@ -9,14 +9,19 @@ header {
   padding: 10px 15px 0 15px;
   box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
   z-index: 3;
+  position: fixed;
 
   a:hover {
     @extend %text-none;
   }
 
+  @include for-size(phone-only) {
+    padding: 10px 15px;
+  }
+
   @include for-size(tablet-portrait-up) {
     flex-direction: row;
-    position: fixed;
+    // position: fixed;
   }
 }
 
@@ -39,8 +44,19 @@ header {
     color: $white;
   }
 
+  .header__logo {
+    @include for-size(phone-only) {
+      display: none;
+    }
+  }
+
   .header__title {
     display: none;
+
+    @include for-size(phone-only) {
+      display: block;
+      padding-bottom: 10px;
+    }
 
     @include for-size(tablet-landscape-up) {
       display: inline-block;
@@ -69,6 +85,10 @@ header {
 
 .header__mainnav {
   bottom: -3px;
+
+  @include for-size(phone-only) {
+    display: none;
+  }
 }
 
 .header__socialnav-item,
@@ -141,3 +161,61 @@ header {
     }
   }
 }
+
+
+.dropdown-nav {
+  display: none;
+
+  @include for-size(phone-only) {
+    display: block;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .open>.dropdown-menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background-color: $navbar-bg-color;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    font-size: 14px;
+  }
+
+  .dropdown-item {
+    color: $white;
+    display: block;
+    width: auto;
+    padding: 15px 5px 15px 10px;
+    transition: all 0.2s;
+  }
+
+  .open>.dropdown-menu li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+

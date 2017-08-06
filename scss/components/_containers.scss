@@ -6,9 +6,10 @@
 	margin: 0 auto;
 	overflow: hidden;
     position: relative;
+    padding-top: 95px;
 
-    @include for-size(tablet-portrait-up) {
-    	padding-top: 95px;
+    @include for-size(phone-only) {
+    	padding-top: 180px;
 	}
 }
 
