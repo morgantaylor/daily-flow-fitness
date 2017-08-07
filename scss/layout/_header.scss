@@ -21,7 +21,6 @@ header {
 
   @include for-size(tablet-portrait-up) {
     flex-direction: row;
-    // position: fixed;
   }
 }
 
@@ -42,12 +41,6 @@ header {
 
   &:hover {
     color: $white;
-  }
-
-  .header__logo {
-    @include for-size(phone-only) {
-      display: none;
-    }
   }
 
   .header__title {

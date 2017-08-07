@@ -17,6 +17,10 @@
 }
 
 .img--logo {
+	@include for-size(phone-only) {
+      display: none;
+    }
+
     height: 70px;
     width: auto;
     margin-right: 20px;
