@@ -9,7 +9,6 @@ footer {
 
 	@include for-size(phone-only) {
 		flex-direction: column;
-	    align-items: flex-start;
 	}
 
 	.disclaimer {
