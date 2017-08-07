@@ -20,7 +20,8 @@ $(function () {
     // validator files are included in the download package
     // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-    $('#contact-form').validator();
+    // dont need this as long as i do this: role="form" data-toggle="validator" in the html form
+    // $('#contact-form').validator();
 
 
     // when the form is submitted
