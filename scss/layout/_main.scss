@@ -10,3 +10,36 @@
     margin: 60px 0;
 }
 
+.brand__title {
+  font-size: 25px;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($white, 10%);
+  }
+
+  &--header {
+  	@extend .brand__title;
+    display: none;
+
+    @include for-size(phone-only) {
+      display: block;
+      padding-bottom: 10px;
+    }
+
+    @include for-size(tablet-landscape-up) {
+      display: inline-block;
+    }
+  }
+
+  &--footer {
+  	@extend .brand__title;
+    padding-bottom: 20px;
+
+    @include for-size(tablet-portrait-up) {
+      padding: 0;
+      margin-right: auto;
+    }
+  }
+}

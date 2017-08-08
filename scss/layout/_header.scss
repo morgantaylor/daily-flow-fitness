@@ -42,19 +42,6 @@ header {
   &:hover {
     color: $white;
   }
-
-  .header__title {
-    display: none;
-
-    @include for-size(phone-only) {
-      display: block;
-      padding-bottom: 10px;
-    }
-
-    @include for-size(tablet-landscape-up) {
-      display: inline-block;
-    }
-  }
 }
 
 .header__nav {
@@ -211,4 +198,3 @@ header {
     margin: 0;
   }
 }
-
