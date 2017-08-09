@@ -1,4 +1,3 @@
-
 var MYBLOG_LIMIT = 4;
 var MYWRAPPER_CLASS = 'wp-container';
  
@@ -59,3 +58,4 @@ $(function () {
         }
     })
 });
+

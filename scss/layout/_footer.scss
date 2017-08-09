@@ -16,6 +16,7 @@ footer {
 .social__instagram {
 	margin-left: auto;
     padding: 20px;
+    cursor: pointer;
 
     @include for-size(phone-only) {
     	margin: 0 auto;
