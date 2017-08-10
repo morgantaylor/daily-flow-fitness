@@ -21,8 +21,8 @@
 .cd-horizontal-timeline .timeline {
   position: relative;
   height: 100px;
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -80,7 +80,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
+  background-color: $blue;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -100,8 +100,8 @@
   bottom: 0;
   z-index: 2;
   text-align: center;
-  // font-size: 1.3rem;
-  padding-bottom: 15px;
+  font-family: $opensans;
+  padding-bottom: 10px;
   color: #383838;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
@@ -109,7 +109,17 @@
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+
+  &:hover {
+    font-weight: bold;
+    color: $blue;
+    text-decoration: none;
+  }
 }
+.cd-horizontal-timeline .events li:nth-of-type(odd) a {
+  padding-bottom: 30px;
+}
+
 .cd-horizontal-timeline .events a::after {
   /* this is used to create the event spot */
   content: '';
@@ -125,25 +135,25 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  border: 2px solid #dfdfdf;
+  border: 2px solid $blue;
   background-color: #f8f8f8;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: $blue;
+  border-color: $blue;
 }
-.cd-horizontal-timeline .events a.selected {
-  pointer-events: none;
-}
+// .cd-horizontal-timeline .events a.selected {
+//   pointer-events: none;
+// }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: $blue;
+  border-color: $blue;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #7b9d6f;
+  border-color: $blue;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
@@ -285,7 +295,7 @@
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
   font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
+  font-family: $opensans;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -298,7 +308,7 @@
   content: '- ';
 }
 .cd-horizontal-timeline .events-content p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #959595;
 }
 .cd-horizontal-timeline .events-content em,
