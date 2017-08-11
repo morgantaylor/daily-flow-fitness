@@ -148,16 +148,27 @@ header {
 
   @include for-size(phone-only) {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
     cursor: pointer;
   }
 
   .btn-menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+
+    .menu-icon {
+      font-size: 35px;
+      color: $white;
+      padding-left: 10px;
+    }
   }
 
   .dropdown-menu {

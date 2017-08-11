@@ -13,7 +13,11 @@
 }
 
 #contact-form {
-    width: 400px;
+    width: 400px; 
+
+    @include for-size(phone-only) {
+        width: 320px; 
+    }
 }
 
 #contact-form h5 {
