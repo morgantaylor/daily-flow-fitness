@@ -58,7 +58,24 @@
 }
 
 .list-styled {
-    list-style-type: disc;
     text-align: left;
     margin: 20px 0 20px 20px;
+}
+
+.list-disc {
+    @extend .list-styled;
+    list-style-type: disc;
+}
+
+.list-numbered {
+    @extend .list-styled;
+    list-style-type: decimal;
+}
+
+.question {
+    font-weight: bold;
+}
+.answer {
+    display: block;
+    margin-left: 20px;
 }
