@@ -43,6 +43,12 @@
     height: 650px;
 }
 
+.img--question {
+	@extend .img--banner;
+	background-image: url('../img/question-banner.jpg');
+	height: 200px;
+}
+
 .img--coporate {
 	@extend .img--banner;
 	background-image: url('../img/corporate-banner.jpg');
