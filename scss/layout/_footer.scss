@@ -1,7 +1,14 @@
 footer {
+	display: -webkit-flex;
 	display: flex;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
 	align-items: center;
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
 	justify-content: space-between;
 	background-color: $navbar-bg-color;
 	width: 100%;
@@ -30,13 +37,18 @@ footer {
 } 
 
 .social__container {
+	display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
 
     @include for-size(phone-only) {
 	    text-align: center;
 	    position: relative;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
 	    align-items: center;
 	}
 
@@ -51,7 +63,10 @@ footer {
 .nav__footer {
 	color: $white;
 	list-style-type: none;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
 	align-items: center;
 	height: auto;
 
@@ -79,6 +94,7 @@ footer {
 	display: none;
 
 	@include for-size(tablet-landscape-up) {
+		display: -webkit-flex;
 		display: flex;
 		margin-left: auto;
 		font-size: 12px;
@@ -104,19 +120,28 @@ footer {
 .footer__main,
 .footer__bottom {
 	width: 100%;
+	display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: auto;
 	position: relative;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
 	align-items: center;
 
     @include for-size(tablet-portrait-up) {
+    	-webkit-flex-direction: row;
+        -ms-flex-direction: row;
 		flex-direction: row;
 	}
 
 	.column {
 		@include for-size(phone-only) {
 			text-align: center;
+			-webkit-box-align: center;
+		    -ms-flex-align: center;
 		    align-items: center;
 		}
 	}

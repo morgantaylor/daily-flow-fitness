@@ -3,8 +3,15 @@
 //============
 
 .card {
+	display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack:start;
+    -ms-flex-pack:start;
+    -webkit-box-pack:start;
+    -ms-flex-pack:start;
     justify-content: flex-start;
     text-align: left;
 	width: 250px;
@@ -71,8 +78,13 @@
 
 .card-icon {
 	@extend .card-display;
+	display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     padding-bottom: 50px;

@@ -1,6 +1,11 @@
 header {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: $navbar-bg-color;
@@ -20,12 +25,15 @@ header {
   }
 
   @include for-size(tablet-portrait-up) {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
 .header__brand {
   height: auto;
+  display: -webkit-flex;
   display: flex;
   max-width: 350px;
   font-size: 25px;
@@ -35,6 +43,8 @@ header {
 
   @include for-size(tablet-portrait-up) {
     margin: 5px auto 10px 5px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     margin-right: auto;
   }
@@ -45,20 +55,30 @@ header {
 }
 
 .header__nav {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 15px;
 
   @include for-size(tablet-portrait-up) {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
   }
 }
 
 .header__social,
 .header__mainnav {
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   position: relative;
 }
@@ -159,8 +179,13 @@ header {
   }
 
   .btn-menu {
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 5px 25px;
 

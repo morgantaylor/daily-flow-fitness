@@ -39,19 +39,32 @@
 .flex-col {
 	@extend section;
 	margin: 0 auto;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
 	flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 	justify-content: center;
 }
 
 .flex-cards {
+    display: -webkit-flex;
 	display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 	justify-content: center;
     margin: 50px auto;
     max-width: 1200px;
     width: 100%;
 
     @include for-size(desktop-up) {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
     }
 }
@@ -63,6 +76,8 @@
 }
 
 .column {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
 	flex-direction: column;
 	max-width: 500px;
     width: 100%;
@@ -88,6 +103,7 @@
 .table__paragraph {
 	@extend .paragraph;
 	text-align: left;
+    display: -webkit-flex;
 	display: flex;
 }
 
@@ -134,8 +150,13 @@
 
 .training-navigation {
     position: relative;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
