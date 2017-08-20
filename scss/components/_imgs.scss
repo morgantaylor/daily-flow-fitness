@@ -10,6 +10,10 @@
     @include for-size(tablet-portrait-up) {
     	padding: 0 20px;
 	}
+
+	@include for-size(phone-only) {
+		width: 260px;
+	}
 }
 
 .img--cole {
@@ -37,10 +41,24 @@
 	height: 250px;
 }
 
+.img--home {
+	@extend .img--banner;
+	background-image: url('../img/jumping.jpg');
+	height: 350px;
+
+	@include for-size(tablet-landscape-up) {
+    	height: 500px;
+	}
+}
+
 .img--flow {
 	@extend .img--banner;
 	background-image: url('../img/flow.jpg');
     height: 650px;
+
+    @include for-size(phone-only) {
+    	height: 800px;
+    }
 }
 
 .img--question {
@@ -58,6 +76,10 @@
 	@extend .img--banner;
 	background-image: url('../img/contact-banner.jpg');
 	background-position: bottom center;
+
+	@include for-size(phone-only) {
+      height: 300px;
+    }
 }
 
 .img--training {
@@ -69,6 +91,7 @@
 .img--services {
 	@extend .img--banner;
 	background-image: url('../img/services-banner.jpg');
+    height: 180px;
 
 }
 

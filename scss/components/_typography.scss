@@ -22,6 +22,10 @@
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text-italic {
     font-style: italic;
 }
@@ -48,7 +52,42 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    &--home {
+        @extend .cta;
+        margin: 60px 40px 0 auto;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+
+        .build {
+            font-size: 35px;
+            font-family: $opensans;
+            text-transform: uppercase;
+
+            @include for-size(tablet-landscape-up) {
+                font-size: 70px;
+            }
+        }
+
+        .transform {
+            font-family: $ptsans;
+            font-size: 25px;
+            margin-bottom: 50px;
+
+            @include for-size(tablet-landscape-up) {
+                font-size: 55px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
+
 
 .brand-name {
     font-weight: bold;
@@ -72,6 +111,16 @@
 .list-numbered {
     @extend .list-styled;
     list-style-type: decimal;
+}
+
+.faq {
+    li {
+        padding: 20px 0;
+
+        @include for-size(phone-only) {
+            border-bottom: 1px solid #ccc;
+        }
+    }
 }
 
 .question {

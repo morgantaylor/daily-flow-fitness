@@ -16,7 +16,7 @@
     width: 400px; 
 
     @include for-size(phone-only) {
-        width: 320px; 
+        width: 280px; 
     }
 }
 

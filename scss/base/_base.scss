@@ -62,20 +62,38 @@ h6 {
     -webkit-margin-before: 0.83em;
     -webkit-margin-after: 0.83em;
     margin-bottom: 1.5em;
+
+    @include for-size(phone-only) {
+        font-size: 34px;
+    }
 }
 .h2, h2 {
     font-family: $opensans;
     font-size: 38px;
     -webkit-margin-before: 0.83em;
+
+    @include for-size(phone-only) {
+        font-size: 28px;
+        -webkit-margin-before: 0;
+    }
 }
 .h3, h3 {
     font-family: $ptsans;
     font-size: 32px;
     margin: 0;
+
+    @include for-size(phone-only) {
+        font-size: 22px;
+    }
 }
 .h4, h4 {
     font-family: $ptsans;
     font-size: 26px;
+
+    @include for-size(phone-only) {
+        font-size: 20px;
+        -webkit-margin-before: 0;
+    }
 }
 .h5, h5 {
     font-family: $ptsans;
@@ -88,18 +106,31 @@ h6 {
 }
 
 blockquote {
-    padding: 10px 10px 10px 20px;
-    background: #f4f7f9;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 10px 20px 10px 40px;
+    color: $white;
+    text-align: left;
     border-radius: 0 3px 3px 0;
-    border-left: 2px solid #CED7DF;
+    border-left: 3px solid #CED7DF;
     font-size: 20px;
-    margin: 30px 0;
+
+    @include for-size(phone-only) {
+        font-size: 16px;
+    }
 
     footer {
         display: block;
         font-size: 80%;
         line-height: 1.42857143;
-        color: #777;
+        color: $white;
+        background: transparent;
+
+        a {
+            color: $white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
 
         &:before {
             content: '\2014 \00A0';
