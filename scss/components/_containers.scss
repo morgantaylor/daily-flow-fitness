@@ -35,6 +35,27 @@
     }
 }
 
+.panel-bg-blue {
+    @extend %blue-background;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .m-tb-40,
+    .m-tb-20 {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 38px;
+        -webkit-margin-before: 0.83em;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+    
+}
+
 .panel-height-500 {
 	height: auto;
 
