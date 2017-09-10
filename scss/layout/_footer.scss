@@ -18,6 +18,17 @@ footer {
 	a:hover {
 		@extend %text-none;
 	}
+
+    .disclaimer {
+        display: none;
+
+        @include for-size(tablet-landscape-up) {
+            display: -webkit-flex;
+            display: flex;
+            margin: 0 0 0 auto;
+            padding: 10px 20px;
+        }
+    }
 }
 
 .social__instagram {
@@ -110,19 +121,6 @@ footer {
 
 	&:hover {
 		color: $white;
-	}
-}
-
-.disclaimer {
-	display: none;
-
-	@include for-size(tablet-landscape-up) {
-		display: -webkit-flex;
-		display: flex;
-		margin-left: auto;
-		font-size: 12px;
-		color: $white;
-	    padding: 10px 20px;
 	}
 }
 

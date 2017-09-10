@@ -27,6 +27,10 @@
 	@extend .icon;
 	@extend .icon-circle;
 	height: 28px;
+
+	&:hover {
+		fill: lighten($blue, 20%);
+	}
 }
 
 .icon-small {
