@@ -42,7 +42,13 @@ footer {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     width: 100%;
+    margin-left: auto;
+    text-align: right;
+    padding: 20px;
 
     @include for-size(phone-only) {
 	    text-align: center;
@@ -56,6 +62,10 @@ footer {
 	    display: block;
 		color: $white;
 	    width: auto;
+
+        abbr {
+            color: $white;
+        }
 	}
 }
 
@@ -74,6 +84,19 @@ footer {
 		padding: 0 15px;
 		cursor: pointer;
 	}
+}
+
+.nav__social {
+    &--item {
+        &:nth-of-type(2) {
+            padding: 0 0 0 15px;
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+            display: none;
+        }
+    }
 }
 
 .nav__footer {
@@ -130,6 +153,7 @@ footer {
 	-webkit-box-align: center;
     -ms-flex-align: center;
 	align-items: center;
+    color: $white;
 
     @include for-size(tablet-portrait-up) {
     	-webkit-flex-direction: row;
