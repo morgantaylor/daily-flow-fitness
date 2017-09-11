@@ -89,12 +89,9 @@
 .disclaimer {
     display: -webkit-flex;
     display: flex;
-    color: $white;
     margin: 0 auto;
     padding: 10px;
 }
-
-
 
 .cta {
     -webkit-box-align: center;
@@ -149,7 +146,7 @@
             position: absolute;
             content: "/";
             color: $red;
-            right: 75px;
+            right: 115px;
             top: -25px;
             transform: rotate(30deg);
         }
@@ -160,6 +157,7 @@
 
         &-price {
             color: $green;
+            margin-right: 40px;
         }
     }
 
@@ -168,9 +166,15 @@
         margin: 0;
 
         @include for-size(tablet-landscape-up) {
-            margin-left: 40px;
             width: auto;
         }
+    }
+
+    + .disclaimer {
+      color: $white;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
     }
 }
 
@@ -186,6 +190,7 @@
     margin: 0;
     display: inline-block;
     padding: 0;
+    color: $white;
   }
 }
 

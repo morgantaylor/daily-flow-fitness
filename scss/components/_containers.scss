@@ -33,6 +33,12 @@
     .m-tb-20 {
         padding: 0;
     }
+
+    p {
+        @include for-size(phone-only) {
+            text-align:left;
+        }
+    }
 }
 
 .panel-bg-blue {
@@ -52,6 +58,12 @@
 
     h3 {
         font-size: 32px;
+    }
+
+    p {
+        @include for-size(phone-only) {
+            text-align:left;
+        }
     }
     
 }

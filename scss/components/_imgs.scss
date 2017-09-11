@@ -61,6 +61,12 @@
     }
 }
 
+.img--assessment-banner {
+    @extend .img--banner;
+    background-image: url('../img/assessment-banner.jpg');
+    background-position: 0 55%;
+}
+
 .img--question {
 	@extend .img--banner;
 	background-image: url('../img/question-banner.jpg');
@@ -86,6 +92,12 @@
 	@extend .img--banner;
 	background-image: url('../img/training-banner.jpg');
     background-position: 0 44%;
+}
+
+.img--massage {
+    @extend .img--banner;
+    background-image: url('../img/massage-banner.jpg');
+    background-position: 0 40%;
 }
 
 .img--services {
