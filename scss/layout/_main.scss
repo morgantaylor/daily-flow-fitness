@@ -142,13 +142,27 @@
     .old-price {
         margin-left: 15px;
 
+        @include for-size(phone-only) {
+          margin: 0 15px 0 0;
+        }
+
         &:after {
-            position: absolute;
-            content: "/";
-            color: $red;
+          position: absolute;
+          content: "/";
+          color: $red;
+          right: 95px;
+          top: -21px;
+          transform: rotate(30deg);
+
+          @include for-size(phone-only) {
+            right: 70px;
+          }
+
+          @include for-size(tablet-portrait-up) {
             right: 115px;
             top: -25px;
-            transform: rotate(30deg);
+          }
+            
         }
     }
     .special {
@@ -158,6 +172,10 @@
         &-price {
             color: $green;
             margin-right: 40px;
+
+            @include for-size(phone-only) {
+              margin-right: 0;
+            }
         }
     }
 

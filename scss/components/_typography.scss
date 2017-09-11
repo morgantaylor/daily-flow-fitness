@@ -78,9 +78,6 @@
         .transform {
             font-family: $ptsans;
             font-size: 25px;
-
-            @include for-size(tablet-landscape-up) {
-            }
         }
     }
 }
@@ -103,13 +100,21 @@
 .promobox {
 
     p {
-        font-size: 30px;
+        font-size: 20px;
+
+        @include for-size(tablet-portrait-up) {
+            font-size: 30px;
+        }
     }
 
     .old-price {
 
         &:after {
-            font-size: 60px;
+            font-size: 45px;
+
+            @include for-size(tablet-portrait-up) {
+                font-size: 60px;
+            }
         }
     }
 }
